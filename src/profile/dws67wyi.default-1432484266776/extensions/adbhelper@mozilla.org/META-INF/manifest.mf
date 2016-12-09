@@ -1,0 +1,92 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: z4CepoLnG8pxv3hgCVt8hw==
+SHA1-Digest: cFMBtt77hBolg1N8p/54iZcS/jo=
+
+Name: adb-client.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: aH4Q0u5hk9OpNy1UOnLqPg==
+SHA1-Digest: 3vvf5zS3ZpgY83QIrC+OLyu5lZM=
+
+Name: adb-running-checker.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 7LdmSLff5Jem7PNf8jOPJg==
+SHA1-Digest: /9Z3p5FiKR+A81Si28v1QGJ0xkk=
+
+Name: adb-socket.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: TnXplsjqAN+33cy70qdAlw==
+SHA1-Digest: uxP9rZcsVcgb3uq8vPvWCh/zV6g=
+
+Name: adb.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: aQmctH5GKDHNebajclNdPw==
+SHA1-Digest: xpmYR7+8FKtrD7hN2GzAT+8ftmg=
+
+Name: bootstrap.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ORmnzBanhjnKU6OsaO+pCQ==
+SHA1-Digest: BCOFCahKaBTULr+Vapp2FTXr+x0=
+
+Name: device.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 62ORus5P8fm+gGnozh5I/Q==
+SHA1-Digest: K5Z29eWMI0APD8I9S506ENxC7BE=
+
+Name: devtools-import.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: xgJ7Pr8vS5vwiPR0a3/vUg==
+SHA1-Digest: kmekSCk1JNqPab2JOzRcW1j54bQ=
+
+Name: devtools-require.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: MJYWbV9j8yK2rLlMvgWAeQ==
+SHA1-Digest: 7DKmUpYZyM9AYRxbCZWk+FGdNg0=
+
+Name: fastboot.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: hijZk4FCvrwiuzPhnAICEQ==
+SHA1-Digest: D+TWDqVXwn8Bdrxgqtti10765+Y=
+
+Name: main.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PrEzt3r7rA81C3wG5yqNQA==
+SHA1-Digest: yj9aHZx/oui8pW2AfBosZd39mlM=
+
+Name: scanner.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: N3zLwbCgTwpEAOxdhPWM1A==
+SHA1-Digest: qK6tm2vJw9HSPJuRtQsqIw06T74=
+
+Name: win32/adb.exe
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: T+AUkn2znFzNFSAbQGFeeQ==
+SHA1-Digest: BVtNQT0ZtwAcV/TwhYk3fxi0uyk=
+
+Name: win32/AdbWinApi.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: R6buPxhrLC9QVwKJBrrAxg==
+SHA1-Digest: /enCKiz81eVmzsLph9lCt4pO6ug=
+
+Name: win32/AdbWinUsbApi.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: XyPy+Ta9+skLsKSXCtNlzw==
+SHA1-Digest: EuFCRLGl0EomF1lUfD2TBUf1L6M=
+
+Name: win32/fastboot.exe
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: obVV5our3/DL6Kwmok5Spg==
+SHA1-Digest: j/DTZN6Ef6wV6Zk7erYwufm9VRQ=
+
+Name: win32/LICENSE
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Ldsj5jsfnDxGqqQZX4GabQ==
+SHA1-Digest: t9XswRIZIbFbZSWM8QAilIvafPg=
+
+Name: win32/README
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: seRlssg4PJAVcLSkNghMNA==
+SHA1-Digest: Y7BxMUco4mFcO5RkFFpLfMGxSp4=
+

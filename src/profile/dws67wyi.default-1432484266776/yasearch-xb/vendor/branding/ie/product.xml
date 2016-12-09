@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Product SYSTEM "/about/product.dtd"><Product>
+    <UpdateUrl x64="https://ye-update.yandex.ru/update-ie-64.xml" x86="https://ye-update.yandex.ru/update-ie.xml"/>
+
+    <WelcomePage action="0" url="&product.welcomepage;"/>
+</Product>

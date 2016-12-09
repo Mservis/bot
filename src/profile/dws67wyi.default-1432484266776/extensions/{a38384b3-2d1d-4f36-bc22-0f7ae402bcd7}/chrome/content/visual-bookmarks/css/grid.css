@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.grid {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.grid__container {
+    max-width: 1250px;
+    min-width: 960px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.grid__cell {
+    padding: 0;
+    margin: 0;
+
+    width: 22.9%;
+    min-width: 229px;
+
+    vertical-align: top;
+    position: relative;
+
+}
+
+.grid__cell-content {
+    position: relative;
+    height: 165px;
+    margin: 4.4%;
+}
+
+.grid__cell-news {
+    width: 68.7%;
+}
+
+.grid__cell-news > .grid__cell-content {
+    margin: 1.466667%;
+}
+

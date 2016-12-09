@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Product SYSTEM "/about/product.dtd"><Product>
+    <YandexFeatures homepage-protection="true" safe-browsing="true"/>
+
+    <WelcomePage url="&product.welcomepage;"/>
+</Product>

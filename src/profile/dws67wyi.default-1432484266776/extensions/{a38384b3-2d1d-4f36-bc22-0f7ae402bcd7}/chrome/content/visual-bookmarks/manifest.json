@@ -1,0 +1,41 @@
+{
+    "name": "«Визуальные Закладки» от Mail.Ru",
+    "version": "1.251",
+    "icons": {
+        "128": "images/128x128.png",
+        "16": "images/16x16.png",
+        "48": "images/48x48.png"
+    },
+    "background": {
+        "scripts": [
+            "background/background.js",
+            "js/libs/jquery.js",
+            "js/utils/utils.js",
+            "js/application_core/jquery-core.js",
+            "js/application_core/jquery-core.js",
+            "js/application_core/file-system.js",
+            "js/sandbox/facade.js",
+            "js/config/config.js",
+            "background/modules.js"
+        ],
+        "persistent": false
+    },
+    "chrome_url_overrides": {
+        "newtab": "visual-bookmarks.html"
+    },
+    "manifest_version": 2,
+    "permissions": [
+        "cookies",
+        "bookmarks",
+        "background",
+        "history",
+        "unlimitedStorage",
+        "management",
+        "tabs",
+        "chrome://favicon/",
+        "chrome://favicon/*",
+        "<all_urls>"
+    ],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval'; object-src 'self'"
+
+}

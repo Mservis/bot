@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 7o4MryIBhUQ5XNDkbgJ6hQ==
+SHA1-Digest: axfxc60V2ywmJWimqdNTsT82KIw=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: X1v5uI0JfpF+r9QEzTrUHA==
+SHA1-Digest: CNZCu6xquGhArCXBWUGPM6aO+xw=
+
+Name: bootstrap.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: FyHR0nBxIrRCjuSippiXIA==
+SHA1-Digest: iFMl/jEeRcHx+silMgzMnHgacq8=
+
+Name: content/fx-metrics.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 1JzGbLkyu70xxIxuOYsxvA==
+SHA1-Digest: 5ECqkwER8RoJte55zDJX4Q1QVFM=
+
+Name: content/loader.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: xaGD8SFf3zHgN6PPajvXLA==
+SHA1-Digest: MCh/S4qi827NtW7dIDZckVDBFzY=
+
+Name: skin/mail48.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: x/kbzrSSyyQnSsfmITKPNQ==
+SHA1-Digest: xFOyUkuhWWW5zc1ER14lAzIYqKc=
+

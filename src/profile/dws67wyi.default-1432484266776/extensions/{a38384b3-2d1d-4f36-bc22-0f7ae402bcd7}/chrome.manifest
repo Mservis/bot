@@ -1,0 +1,10 @@
+overlay chrome://browser/content/browser.xul chrome://vbmail.ru/content/overlay.xul
+
+content vbmail.ru chrome/content/
+
+locale vbmail.ru ru-RU chrome/locale/ru-RU/
+
+skin vbmail.ru classic/1.0 chrome/skin/
+
+style	chrome://browser/content/browser.xul	chrome://vbmail.ru/skin/overlay.css
+style	chrome://global/content/customizeToolbar.xul	chrome://vbmail.ru/skin/overlay.css

@@ -1,0 +1,54 @@
+2015-09-08 21:31:17	yasearch.App         CONFIG	Initializing Bar platform 10 r48395, UA: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading addonManager part from resource://yasearch-app/parts/addonmgr.js
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading yCookie part from resource://yasearch-app/parts/ycookie.js
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading addonFS part from resource://yasearch-app/parts/addonfs.js
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading appStrings part from resource://yasearch-app/parts/strbundle.js
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading BarPlatform part from resource://yasearch-app/parts/platform.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script preset.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script manifest.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script preset-with-manifest.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script package.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script unit.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script permissions.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script blacklist.js
+2015-09-08 21:31:17	yasearch.CP          DEBUG	  Including script cachedres.js
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading clids part from resource://yasearch-app/parts/clids.js
+2015-09-08 21:31:17	yasearch.App         DEBUG	Loading branding part from resource://yasearch-app/parts/branding.js
+2015-09-08 21:31:17	yasearch.AddonFS     DEBUG	JAR entry requested: content/branding
+2015-09-08 21:31:18	yasearch.Branding    DEBUG	Validating product info...
+2015-09-08 21:31:18	yasearch.AddonFS     DEBUG	JAR entry requested: content/branding
+2015-09-08 21:31:18	yasearch.Branding    DEBUG	Validating product info...
+2015-09-08 21:31:18	yasearch.Branding    DEBUG	Barless modes are: true, true
+2015-09-08 21:31:18	yasearch.Branding    DEBUG	Package dates are: Thu Jan 17 2013 04:07:50 GMT+0600, Thu Jan 17 2013 04:07:50 GMT+0600
+2015-09-08 21:31:18	yasearch.Branding    DEBUG	Package addresses are the same: http://download.yandex.ru/bar/branding/yandex-element.zip
+2015-09-08 21:31:18	yasearch.App         DEBUG	Loading brandProviders part from resource://yasearch-app/parts/brand_prov.js
+2015-09-08 21:31:18	yasearch.App         DEBUG	Loading distribution part from resource://yasearch-app/parts/distribution.js
+2015-09-08 21:31:18	yasearch.App         DEBUG	Loading installer part from resource://yasearch-app/parts/installer.js
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing installer part
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing brandProviders part
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing branding part
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing clids part
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing BarPlatform part
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing yCookie part
+2015-09-08 21:31:22	yasearch.App         DEBUG	Finalizing addonManager part
+2015-09-08 21:31:22	yasearch.Core        FATAL	Couldn't initialize application. Error: License agreement rejected
+in resource://yasearch-app/parts/installer.js@17
+2015-09-08 21:31:22	yasearch.Core        DEBUG	Installer_init@resource://yasearch-app/parts/installer.js:17:1
+BarApp__loadParts@resource://yasearch-app/bar.js:834:1
+BarApp__init@resource://yasearch-app/bar.js:635:1
+BarApp_init@resource://yasearch-app/bar.js:12:1
+CustomBarCore__initApp@file:///C:/Users/murchio/AppData/Roaming/Mozilla/Firefox/Profiles/dws67wyi.default-1432484266776/extensions/yasearch@yandex.ru/components/core.js:256:1
+CustomBarCore_observe@file:///C:/Users/murchio/AppData/Roaming/Mozilla/Firefox/Profiles/dws67wyi.default-1432484266776/extensions/yasearch@yandex.ru/components/core.js:116:1
+
+2015-09-08 21:31:22	Browser.Console      ERROR	[JavaScript Error: "2015-09-08 21:31:22	yasearch.Core        FATAL	Couldn't initialize application. Error: License agreement rejected
+in resource://yasearch-app/parts/installer.js@17
+" {file: "file:///C:/Users/murchio/AppData/Roaming/Mozilla/Firefox/Profiles/dws67wyi.default-1432484266776/extensions/yasearch@yandex.ru/components/core.js" line: 261}]
+2015-09-08 21:31:22	Browser.Console      ERROR	[JavaScript Error: "XB protocol couldn't get data provider for URI: xb://branding/names.dtd" {file: "file:///C:/Users/murchio/AppData/Roaming/Mozilla/Firefox/Profiles/dws67wyi.default-1432484266776/extensions/yasearch@yandex.ru/components/xbProtocol.js" line: 68}]
+2015-09-08 21:31:22	Browser.Console      ERROR	[JavaScript Error: "uncaught exception: 2147500037"]
+2015-09-08 21:31:23	Browser.Console      ERROR	[JavaScript Error: "DEPRECATION WARNING: FUEL is deprecated, you should use the add-on SDK instead.
+You may find more details about this deprecation at: https://developer.mozilla.org/Add-ons/SDK/
+jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/omni.ja!/components/fuelApplication.js 1458 Application
+jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/omni.ja!/components/fuelApplication.js 726 af_ci
+chrome://selenium-ide/content/selenium-ide-overlay.js 274 SeleniumIDE.Overlay.init/<
+null 0 null
+" {file: "resource://gre/modules/Deprecated.jsm" line: 79}]

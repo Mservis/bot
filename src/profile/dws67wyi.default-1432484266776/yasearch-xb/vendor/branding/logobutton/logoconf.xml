@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE LogoButton [
+<!ENTITY % servicesDTD SYSTEM "../services.dtd">
+%servicesDTD;
+<!ENTITY % logoconfDTD SYSTEM "logoconf.dtd">
+%logoconfDTD;
+]>
+<LogoButton>
+  <Tooltip>&tooltip;</Tooltip>
+  <Link action="10" url="&yandex.url;/?clid={clid4}"/>
+</LogoButton>

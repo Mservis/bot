@@ -1,0 +1,16 @@
+.news_items_scroll::scrollbar {
+    display: none;
+}
+.news_items_scroll::scrollbar-button:start:decrement,
+.news_items_scroll::scrollbar-button:end:increment {
+}
+
+.news_items_scroll::scrollbar-track {
+}
+
+.news_items_scroll::scrollbar-thumb:vertical {
+}
+
+.news_items_scroll::scrollbar-thumb:horizontal {
+
+}

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<autoinstall>
+    <groups>
+        <group id="mail" limit="1"/>
+        <group id="social" limit="3"/>
+        <group id="yandex-services" limit="3"/>
+        <group id="service"/>
+    </groups>
+    
+    
+
+    
+    <resolutions>
+        <resolution h-from="0" h-to="799" limit="1" limit-short="0">
+            <groups>
+                <group id="mail" limit="1" limit-short="0"/>
+                <group id="social" limit="1" limit-short="0"/>
+                <group id="yandex-services" limit="1" limit-short="0"/>
+                <group id="service"/>
+            </groups>
+        </resolution>
+        
+        <resolution h-from="800" h-to="949" limit="1" limit-short="0">
+            <groups>
+                <group id="mail" limit="1" limit-short="0"/>
+                <group id="social" limit="1" limit-short="0"/>
+                <group id="yandex-services" limit="1" limit-short="0"/>
+                <group id="service"/>
+            </groups>
+        </resolution>
+
+        <resolution h-from="950" h-to="1365" limit="3" limit-short="1">
+            <groups>
+                <group id="mail" limit="1" limit-short="0"/>
+                <group id="social" limit="2" limit-short="1"/>
+                <group id="yandex-services" limit="2" limit-short="1"/>
+                <group id="service"/>
+            </groups>
+        </resolution>
+
+        <resolution h-from="1366" h-to="1599" limit="3" limit-short="2">
+            <groups>
+                <group id="mail" limit="2" limit-short="1"/>
+                <group id="social" limit="3" limit-short="2"/>
+                <group id="yandex-services" limit="3" limit-short="2"/>
+                <group id="service"/>
+            </groups>
+        </resolution>
+
+        <resolution h-from="1600" h-to="10000" limit="4" limit-short="3">
+            <groups>
+                <group id="mail" limit="2" limit-short="1"/>
+                <group id="social" limit="3" limit-short="2"/>
+                <group id="yandex-services" limit="3" limit-short="2"/>
+                <group id="service"/>
+            </groups>
+        </resolution>
+    </resolutions>
+
+    <components>
+        <component group-id="social" id="http://bar-widgets.yandex.ru/packages/approved/91/manifest.xml#profile">
+            <cookies>
+                <cookie name="remixsid" url="http://vk.com/"/>
+                <cookie name="s" url="https://login.vk.com/"/>
+                <cookie name="l" url="https://login.vk.com/"/>
+                <cookie name="p" url="https://login.vk.com/"/>
+            </cookies>
+            <history min-visits="10">
+                <url domain="vkontakte.ru"/>
+                <url domain="vk.com"/>
+            </history>
+        </component>
+
+        <component group-id="yandex-services" id="http://bar.yandex.ru/packages/yandexbar#music">
+            <cookies>
+                <cookie name="music_uid" url="http://music.yandex.ru/"/>
+                <cookie name="audio_vol" url="http://vk.com/"/>
+            </cookies>
+            <history min-visits="5">
+                <url domain="spaces.ru"/>
+                <url domain="audiovkontakte.ru"/>
+                <url domain="zaycev.net"/>
+                <url domain="moskva.fm"/>
+                <url domain="music.yandex.ru"/>
+                <url domain="amalgama-lab.com"/>
+                <url domain="audiopoisk.com"/>
+                <url domain="mp3poisk.net"/>
+                <url domain="muzofon.com"/>
+                <url domain="mp3ostrov.com"/>
+                <url domain="poiskm.ru"/>
+                <url domain="iplayer.fm"/>
+                <url domain="analyrics.com"/>
+            </history>
+        </component>
+
+        <component group-id="mail" id="http://bar-widgets.yandex.ru/packages/approved/82/manifest.xml#mailru">
+            <history min-visits="10">
+                <url domain="e.mail.ru"/>
+            </history>
+        </component>
+
+        <component group-id="social" id="http://bar-widgets.yandex.ru/packages/approved/140/manifest.xml#odnoklassniki">
+            <cookies>
+                <cookie name="LASTSRV" url="http://odnoklassniki.ru/"/>
+            </cookies>
+            <history min-visits="10">
+                <url domain="odnoklassniki.ru"/>
+            </history>
+        </component>
+
+        <component group-id="social" id="http://bar-widgets.yandex.ru/packages/approved/115/manifest.xml#facebook">
+            <cookies>
+                <cookie name="c_user" url="http://facebook.com/"/>
+            </cookies>
+            <history min-visits="10">
+                <url domain="facebook.com"/>
+            </history>
+        </component>
+
+        <component group-id="mail" id="http://bar-widgets.yandex.ru/packages/approved/75/manifest.xml#rambler">
+            <cookies>
+                <cookie name="rsid" url="http://rambler.ru/"/>
+            </cookies>
+            <history min-visits="10">
+                <url domain="mail.rambler.ru"/>
+            </history>
+        </component>
+
+        <component group-id="mail" id="http://bar-widgets.yandex.ru/packages/approved/97/manifest.xml#gmail">
+            <cookies>
+                <cookie name="GMAIL_AT" url="https://mail.google.com/mail/"/>
+                <cookie name="GX" url="https://mail.google.com/mail/"/>
+            </cookies>
+            <history min-visits="10">
+                <url domain="mail.google.com"/>
+            </history>
+        </component>
+
+        <component group-id="social" id="http://bar-widgets.yandex.ru/packages/approved/172/manifest.xml#twitter">
+            <cookies>
+                <cookie name="twid" url="http://twitter.com/"/>
+            </cookies>
+            <history min-visits="10">
+                <url domain="twitter.com"/>
+            </history>
+        </component>
+
+        <component group-id="social" id="http://bar.yandex.ru/packages/yandexbar#yaru">
+            <history min-visits="4">
+                <url domain=".ya.ru"/>
+                
+            </history>
+        </component>
+
+        <component group-id="social" id="http://bar.yandex.ru/packages/yandexbar#moikrug">
+            <history min-visits="4">
+                <url domain="moikrug.ru"/>
+            </history>
+        </component>
+
+        <component group-id="yandex-services" id="http://bar.yandex.ru/packages/yandexbar#money">
+            <history min-visits="4">
+                <url domain="money.yandex.ru"/>
+            </history>
+        </component>
+
+        <component group-id="yandex-services" id="http://bar.yandex.ru/packages/yandexbar#fotki">
+            <history min-visits="4">
+                <url domain="fotki.yandex.ru"/>
+            </history>
+        </component>
+        
+        
+
+        <component group-id="service" id="http://bar-widgets.yandex.ru/packages/approved/182/manifest.xml#yavideo">
+            <history min-visits="4">
+                <url domain="youtube.com"/>
+                <url domain="vimeo.com"/>
+                <url domain="video.yandex.ru"/>
+            </history>
+        </component>
+
+        <component group-id="service" id="http://bar.yandex.ru/packages/yandexbar#quote">
+            <history min-visits="4">
+                <url domain="micex.ru"/>
+                <url domain="cbr.ru"/>
+                <url domain="finance.rambler.ru"/>
+                <url domain="rbc.ru"/>
+            </history>
+        </component>
+
+        <component group-id="service" id="http://bar.yandex.ru/packages/yandexbar#opinions">
+            <history min-visits="4">
+                <url domain="blogs.yandex.ru"/>
+            </history>
+        </component>
+        
+        <component group-id="service" id="http://bar.yandex.ru/packages/yandexbar#zakladki">
+            <history min-visits="4">
+                <url domain="zakladki.yandex.ru"/>
+            </history>
+        </component>
+        
+        <component group-id="service" id="http://bar.yandex.ru/packages/yandexbar#cy">
+            <history min-visits="4">
+                <url domain="yaca.yandex.ru"/>
+            </history>
+        </component>
+        
+        <component group-id="service" id="http://bar.yandex.ru/packages/yandexbar#lenta">
+            <history min-visits="4">
+                <url domain="lenta.yandex.ru"/>
+            </history>
+        </component>
+    </components>
+</autoinstall>

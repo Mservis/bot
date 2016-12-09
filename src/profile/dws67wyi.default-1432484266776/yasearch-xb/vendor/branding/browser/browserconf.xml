@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Browser [
+<!ENTITY % servicesDTD SYSTEM "../services.dtd">
+%servicesDTD;
+<!ENTITY % browserconfDTD SYSTEM "browserconf.dtd">
+%browserconfDTD;
+]>
+
+<Browser xmlns:yb="http://bar.yandex.ru/">
+	<HomePage title="&yandex.label;">&yandex.url;/?clid={clid5}</HomePage>
+	<QuickSearch>
+		<OpenSearchDescription yb:uniqName="yandex" xmlns="http://a9.com/-/spec/opensearch/1.1/">
+			<ShortName>&yandex.label;</ShortName>
+			<Description>&yandex.search.tooltip;</Description>
+			<Url template="&yandex.qs.url;" type="text/html"/>
+			<Url rel="suggestions" template="&yandex.qs.suggestions;" type="application/json"/>
+			<Url rel="search-form" template="&yandex.url;" type="text/html"/>
+			<Url rel="moz-keywordsearch" template="&yandex.qs.keywordsearch;" type="application/x-moz-keywordsearch"/>
+			<Image height="16" width="16">icons/fav-yandex.ico</Image>
+			<InputEncoding>UTF-8</InputEncoding>
+		</OpenSearchDescription>
+	</QuickSearch>
+
+	<LocationBarSearch>
+		<Url>&locationbar.search.url;</Url>
+	</LocationBarSearch>
+
+	<PageContextMenu type="text">
+		<Link action="11" encoding="utf-8" ie-has-accelerator="true" image="icons/yandex.png" label="&yandex.context.label;" url="&yandex.search.url;&amp;clid={clid10}"/>
+		<Link action="620" encoding="utf-8" ie-has-accelerator="true" image="icons/dicts.png" label="&lingvo.context.find.label;" url="&lingvo.search.find.url;&amp;clid={clid10}"/>
+		<Category image="icons/yandex.png" label="&category.services;">
+			<Link action="210" encoding="utf-8" image="icons/catalog.png" label="&catalog.label;" url="&catalog.search.url;&amp;clid={clid10}"/>
+			<Link action="310" encoding="utf-8" image="icons/market.png" label="&market.label;" url="&market.search.url;&amp;clid={clid10}"/>
+			<Link action="410" encoding="utf-8" image="icons/images.png" label="&images.label;" url="&images.search.url;&amp;clid={clid10}"/>
+			<Link action="510" encoding="utf-8" image="icons/blogs.png" label="&blogs.label;" url="&blogs.search.url;&amp;clid={clid10}"/>
+			<Link action="610" encoding="utf-8" image="icons/dicts.png" label="&dicts.label;" url="&dicts.search.url;&amp;clid={clid10}"/>
+			<Link action="3610" encoding="utf-8" image="icons/video.png" label="&video.label;" url="&video.search.url;&amp;clid={clid10}"/>
+			<Link action="3550" encoding="utf-8" image="icons/photos.png" label="&photos.label;" url="&photos.search.url;&amp;clid={clid10}"/>
+			<Link action="1630" encoding="utf-8" image="icons/mycircle.png" label="&mycircle.label;" url="&mycircle.search.url;&amp;clid={clid10}"/>
+			<Link action="4510" encoding="utf-8" image="icons/auto.png" label="&auto.label;" url="&auto.search.url;&amp;clid={clid10}"/>
+			<Link action="3480" encoding="utf-8" image="icons/yaru.png" label="&yaru.label;" url="&yaru.search.url;&amp;clid={clid10}"/>
+			<Link action="2010" encoding="utf-8" image="icons/find.png" label="&find.label;" url="&find.search.url;&amp;clid={clid10}"/>
+			<Link action="2110" encoding="utf-8" image="icons/news.png" label="&news.label;" url="&news.search.url;&amp;clid={clid10}"/>
+			<Link action="3110" encoding="utf-8" image="icons/tv.png" label="&tv.label;" url="&tv.search.url;&amp;clid={clid10}"/>
+			<Link action="2910" encoding="utf-8" image="icons/afisha.png" label="&afisha.label;" url="&afisha.search.url;&amp;clid={clid10}"/>
+			<Link action="720" encoding="utf-8" image="icons/maps.png" label="&maps.label;" url="&maps.search.url;&amp;clid={clid10}"/>
+			<Link action="5210" encoding="utf-8" image="icons/job.png" label="&job.label;" url="&job.search.url;&amp;clid={clid10}"/>
+		</Category>
+	</PageContextMenu>
+</Browser>
