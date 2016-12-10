@@ -2,463 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30c4ebf5-7080-4a89-a47d-c5830e0e6228" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/IE8/chernovik.class" afterPath="$PROJECT_DIR$/target/classes/IE8/chernovik.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/IE8/yavnoe_ogidanie.class" afterPath="$PROJECT_DIR$/target/classes/IE8/yavnoe_ogidanie.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumAndSikuli.iml" afterPath="$PROJECT_DIR$/SeleniumAndSikuli.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/HelperBasePakage/SikuliHelper.java" afterPath="$PROJECT_DIR$/src/main/java/HelperBasePakage/SikuliHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/Application.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/NavigatorHelper.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/NavigatorHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/TimeSinhron.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/TimeSinhron.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/chernovik.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/chernovik.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/coockiExample.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/coockiExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/sozdat_udalit.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/sozdat_udalit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/udalit.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/udalit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mozillal/SikuliTestTest.java" afterPath="$PROJECT_DIR$/src/main/java/mozillal/SikuliTestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/SiteSecurityServiceState.txt" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/SiteSecurityServiceState.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist-addons.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist-addons.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist-gfx.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist-gfx.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist-plugins.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist-plugins.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/blocklist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/cert_override.txt" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/cert_override.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/compatibility.ini" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/compatibility.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/enumerate_devices.txt" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/enumerate_devices.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions.ini" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/META-INF/manifest.mf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/META-INF/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/META-INF/mozilla.sf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/META-INF/mozilla.sf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb-client.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb-client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb-running-checker.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb-running-checker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb-socket.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb-socket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/adb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/bootstrap.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/device.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/devtools-import.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/devtools-import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/devtools-require.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/devtools-require.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/fastboot.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/fastboot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/main.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/scanner.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/scanner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/win32/LICENSE" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/win32/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/win32/README" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/adbhelper@mozilla.org/win32/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/META-INF/manifest.mf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/META-INF/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/META-INF/mozilla.sf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/META-INF/mozilla.sf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/README.md" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/bootstrap.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/data/building.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/data/building.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/data/license.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/data/license.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/console-utils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/console-utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/highlighter.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/highlighter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/inspector.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/inspector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/network-store.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/network-store.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/preview.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/preview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/reflow.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/reflow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/resource-store.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/resource-store.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/root.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/root.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/rpc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/rpc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/server.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/sheet-store.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/sheet-store.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/stringify.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/stringify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/styles.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/thread.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/thread.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/value.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/walker.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/walker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/webconsole.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/chromium/webconsole.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/devtools-import.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/devtools-import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/devtools-require.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/devtools-require.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/main.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/ios-proxy.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/ios-proxy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/protocol-extra.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/protocol-extra.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/scanner.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/scanner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/task.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/lib/util/task.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/package.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/fxdevtools-adapters@mozilla.org/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/META-INF/manifest.mf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/META-INF/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/META-INF/mozilla.sf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/META-INF/mozilla.sf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/bootstrap.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/chrome.manifest" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/chrome.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/content/fx-metrics.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/content/fx-metrics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/content/loader.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/content/loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/homepage@mail.ru/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/META-INF/manifest.mf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/META-INF/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/META-INF/mozilla.sf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/META-INF/mozilla.sf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/bootstrap.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/chrome.manifest" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/chrome.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/content/fx-metrics.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/content/fx-metrics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/content/loader.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/content/loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/search@mail.ru/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome.manifest" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/browser.xul" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/browser.xul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/firebug-lite.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/firebug-lite.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/gui.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/gui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/jquery.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/jquery.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/smoothness/jquery-ui-1.7.custom.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/smoothness/jquery-ui-1.7.custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/superfish.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/superfish.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/windmill.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/css/windmill.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/gui.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/gui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/iedoc.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/iedoc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/img/Selenium Logos.svg" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/img/Selenium Logos.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/csv.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/csv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/json.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/manual.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/manual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/none.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/none.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/sources.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/sources.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/xml.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/datasource/xml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/convert.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/convert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/dialogs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/dialogs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/exportscript.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/exportscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/exportsuite.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/exportsuite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/inputs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/inputs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/record.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/record.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/runall.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/runall.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/settings.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/variables.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/dialogs/variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/menu.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/stepstable.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/stepstable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/suite.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/suite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/translate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/gui/translate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/de.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/en.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/fr.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/jp.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/jp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/nl.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/pl.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/pt-br.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/translate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/i18n/translate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/ignition.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/ignition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/io.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/load_html_format.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/load_html_format.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/loadlistener.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/loadlistener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/locator.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/locator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/pagestate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/pagestate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/plugins.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/record.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/record.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/script.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/adapter.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/adapter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/docs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/docs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/extensions.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/init.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/methods.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/playback.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/playback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/rcPlayback.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/rcPlayback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/recorder.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/recorder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/selenium1.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/selenium1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/seleniumpatch.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium1/seleniumpatch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/docs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/docs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/csharp_new.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/csharp_new.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/csharp_new_nunit.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/csharp_new_nunit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/english.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/english.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java_junit.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java_junit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java_new.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java_new.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java_testng.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/java_testng.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/json.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-mocha.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-mocha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-protractor.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-protractor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-selenium-webdriver.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-selenium-webdriver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-wd-promises.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-wd-promises.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-wd.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/node-wd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/php.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/php.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/phpunit.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/phpunit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/phpunitwebdriver_facebook.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/phpunitwebdriver_facebook.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/python.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/python.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/python_unittest.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/python_unittest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/ruby.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/formats/ruby.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/io.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/io/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/playback.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/playback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/rcPlayback.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/rcPlayback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/recorder.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/recorder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/selenium2.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/selenium2/selenium2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/stepdisplay.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/stepdisplay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/suite2.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/suite2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/url.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/url.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/utils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/verifyexplorer.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/verifyexplorer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/versionconverter.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/versionconverter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/booting.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/booting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/plugins.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/script.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/startup.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/builder/views/startup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/browserdetect.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/browserdetect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/cssQuery-p.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/cssQuery-p.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/jquery-ui-1.8.17.custom/js/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/jquery-ui-1.8.17.custom/js/jquery-1.7.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/jquery-ui-1.8.17.custom/js/jquery-ui-1.8.17.custom.min.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/jquery-ui-1.8.17.custom/js/jquery-ui-1.8.17.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/jquery.csv-0.71.min.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/jquery.csv-0.71.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/js-xpath.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/js-xpath.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/json2.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/lib/json2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/loader.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/file-utils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/file-utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/format.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/format.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/blank.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/blank.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/cs-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/cs-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/formatCommandOnlyAdapter.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/formatCommandOnlyAdapter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/groovy-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/groovy-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/html.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/html.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/java-rc-testng.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/java-rc-testng.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/java-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/java-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/perl-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/perl-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/php-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/php-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/python-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/python-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/remoteControl.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/remoteControl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/ruby-rc-rspec.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/ruby-rc-rspec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/ruby-rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/formats/ruby-rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/preferences.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/preferences.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/selenium/iedoc-core.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/selenium/iedoc-core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/selenium/scripts/selenium-api.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/selenium/scripts/selenium-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/testCase.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/testCase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/testSuite.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/testSuite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/tools.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/tools.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/xhtml-entities.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium-ide/xhtml-entities.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/find_matching_child.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/find_matching_child.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/htmlutils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/htmlutils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/injection.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/injection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-api.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-browserbot.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-browserbot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-browserdetect.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-browserdetect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-commandhandlers.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-commandhandlers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-executionloop.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-executionloop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-logging.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-logging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-remoterunner.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-remoterunner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-testrunner.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-testrunner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-version.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/selenium-version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/ui-doc.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/ui-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/ui-element.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/ui-element.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/ui-map-sample.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/ui-map-sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/user-extensions.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/user-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/user-extensions.js.sample" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/user-extensions.js.sample" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/xmlextras.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/js/selenium/xmlextras.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/stepstable.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/html/stepstable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/seleniumBuilder2.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/chrome/content/seleniumBuilder2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/bad_cert_listener.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/bad_cert_listener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/command_processor.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/command_processor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/driver_component.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/driver_component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/httpd.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/httpd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/prompt_service.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/prompt_service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/session.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/session.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/session_store.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/session_store.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/synthetic_mouse.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/components/synthetic_mouse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/dommessenger.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/dommessenger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/fx4driver.xul" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/fx4driver.xul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/fxdriver.xul" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/fxdriver.xul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/server.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/content/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/defaults/preferences/prefs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/defaults/preferences/prefs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/locale/en-US/translations.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/locale/en-US/translations.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/evaluate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/evaluate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/json2.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/json2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/modules/timer.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/modules/timer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/modules/web_element_cache.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/modules/web_element_cache.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/sizzle.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/resource/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/skin/skin.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@saucelabs.com/skin/skin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/META-INF/manifest.mf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/META-INF/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/META-INF/mozilla.sf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/META-INF/mozilla.sf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/chrome.manifest" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/chrome.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/browser-overlay.xul" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/browser-overlay.xul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/csv.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/csv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/json.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/manual.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/manual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/none.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/none.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/sources.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/sources.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/xml.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/datasource/xml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/dialogs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/dialogs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/exportscript.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/exportscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/exportsuite.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/exportsuite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/inputs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/inputs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/rc.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/rc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/record.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/record.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/runall.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/runall.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/settings.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/variables.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/dialogs/variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui/menu.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui/suite.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui/suite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui/translate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/gui/translate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/de.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/en.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/fr.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/jp.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/jp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/nl.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/pl.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/pt-br.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/translate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/i18n/translate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/ignition.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/ignition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/io.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/load_html_format.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/load_html_format.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/loadlistener.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/loadlistener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/locator.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/locator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/pagestate.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/pagestate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/plugins.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/record.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/record.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/script.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/docs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/docs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/csharp_new.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/csharp_new.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/csharp_new_nunit.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/csharp_new_nunit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/english.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/english.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/java_junit.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/java_junit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/java_new.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/java_new.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/java_testng.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/java_testng.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/json.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-mocha.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-mocha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-protractor.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-protractor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-selenium-webdriver.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-selenium-webdriver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-wd-promises.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-wd-promises.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-wd.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/node-wd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/php.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/php.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/phpunit.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/phpunit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/phpunitwebdriver_facebook.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/phpunitwebdriver_facebook.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/python.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/python.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/python_unittest.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/python_unittest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/ruby.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/formats/ruby.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/io.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/io/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/playback.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/playback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/rcPlayback.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/rcPlayback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/recorder.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/recorder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/selenium2.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/selenium2/selenium2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/stepdisplay.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/stepdisplay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/suite.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/suite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/url.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/url.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/utils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/verifyexplorer.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/verifyexplorer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/booting.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/booting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/plugins.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/script.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/startup.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/builder/views/startup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/css/gui.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/css/gui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/css/jquery.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/css/jquery.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/css/smoothness/jquery-ui-1.7.custom.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/css/smoothness/jquery-ui-1.7.custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/gui.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/gui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/cssQuery-noeval.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/cssQuery-noeval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/jquery-3.1.0.min.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/jquery-3.1.0.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/jquery-ui.min.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/jquery.csv-0.71.min.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/lib/jquery.csv-0.71.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/loader.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/html/loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/seleniumbuilder3.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/content/seleniumbuilder3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/defaults/preferences/prefs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/defaults/preferences/prefs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/locale/en-US/translations.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/seleniumbuilder@sebuilder.com/locale/en-US/translations.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/META-INF/manifest.mf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/META-INF/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/META-INF/mozilla.sf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/META-INF/mozilla.sf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome.manifest" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/Utils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/Utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/fx-metrics.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/fx-metrics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/loader.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/main.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/newtabhomepage.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/newtabhomepage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/overlay.xul" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/overlay.xul" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/background/background.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/background/background.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/background/background.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/background/background.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/background/modules.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/background/modules.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/customScrollbar.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/customScrollbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/dialog.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/general.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/general.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/grid.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/grid.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/informers.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/informers.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/menu.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/news.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/news.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/searchbar.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/searchbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/slide.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/slide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/splash.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/splash.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/suggests.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/suggests.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/tabs.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/tabs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/themes.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/css/themes.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/file-system.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/file-system.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/jquery-core.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/jquery-core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/sqliteStorage.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/sqliteStorage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/visibleTab.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/application_core/visibleTab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/config/config.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/config/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/google-analytics.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/google-analytics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/jquery-ui.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/jquery.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/knockout-2.2.1.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/knockout-2.2.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/suggests.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/libs/suggests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/main.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/drag_drop.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/drag_drop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/edit-dialog.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/edit-dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/layout.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/remove-dialog.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/remove-dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/updates.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/bookmarks/updates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/currency.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/currency.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/geo-monitoring.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/geo-monitoring.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/mail-counter.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/mail-counter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/news.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/odnoklassniki-counter.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/odnoklassniki-counter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/searchbar.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/searchbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/themes.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/themes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/traffic.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/traffic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/weather.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/modules/weather.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/informer.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/informer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/pane.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/pane.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/slider.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/tab-strip.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/proto/tab-strip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/sandbox/facade.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/sandbox/facade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/utils/utils.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/js/utils/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/manifest.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/visual-bookmarks.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/chrome/content/visual-bookmarks/visual-bookmarks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/install.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/install.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/lib/version.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/extensions/{a38384b3-2d1d-4f36-bc22-0f7ae402bcd7}/lib/version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-eme-adobe/16/eme-adobe.info" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-eme-adobe/16/eme-adobe.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-gmpopenh264/1.6/gmpopenh264.info" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-gmpopenh264/1.6/gmpopenh264.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-widevinecdm/1.4.8.903/LICENSE.txt" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-widevinecdm/1.4.8.903/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-widevinecdm/1.4.8.903/manifest.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/gmp-widevinecdm/1.4.8.903/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/mimeTypes.rdf" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/mimeTypes.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/pluginreg.dat" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/pluginreg.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/prefs.js" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/prefs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/prefs.js_20150530070650.backup" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/prefs.js_20150530070650.backup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/revocations.txt" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/revocations.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/search-metadata.json" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/search-metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/debug.log" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/incoming/A85409BF4C4A743375BA8A6B07D663A8/default.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/incoming/A85409BF4C4A743375BA8A6B07D663A8/default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/about/product.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/about/product.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/browser/browserconf.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/browser/browserconf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/distribution/distribution.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/distribution/distribution.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/fx/about/product.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/fx/about/product.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/ie/product.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/ie/product.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/license/fx/license.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/license/fx/license.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/license/fx/sublicenses/apache.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/license/fx/sublicenses/apache.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/about/product.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/about/product.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/browser/browserconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/browser/browserconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/license/fx/confidential.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/license/fx/confidential.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/license/fx/license.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/license/fx/license.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/logobutton/logoconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/logobutton/logoconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/services.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/services.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/welcome/fx/welcome.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/be/welcome/fx/welcome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/about/product.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/about/product.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/browser/browserconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/browser/browserconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/license/fx/confidential.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/license/fx/confidential.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/license/fx/license.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/license/fx/license.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/logobutton/logoconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/logobutton/logoconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/services.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/services.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/welcome/fx/welcome.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/en/welcome/fx/welcome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/about/product.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/about/product.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/browser/browserconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/browser/browserconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/license/fx/confidential.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/license/fx/confidential.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/license/fx/license.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/license/fx/license.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/logobutton/logoconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/logobutton/logoconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/services.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/services.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/welcome/fx/welcome.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/kk/welcome/fx/welcome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/about/product.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/about/product.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/browser/browserconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/browser/browserconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/license/fx/confidential.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/license/fx/confidential.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/license/fx/license.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/license/fx/license.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/logobutton/logoconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/logobutton/logoconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/services.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/services.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/welcome/fx/welcome.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/ru/welcome/fx/welcome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/about/product.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/about/product.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/browser/browserconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/browser/browserconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/license/fx/confidential.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/license/fx/confidential.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/license/fx/license.xhtml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/license/fx/license.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/logobutton/logoconf.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/logobutton/logoconf.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/services.dtd" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/services.dtd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/welcome/fx/welcome.html" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/locale/uk/welcome/fx/welcome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/logobutton/logoconf.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/logobutton/logoconf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/statistics/statistics.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/statistics/statistics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/toolbar/autoinst.xml" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/toolbar/autoinst.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/welcome/fx/welcome.css" afterPath="$PROJECT_DIR$/src/profile/dws67wyi.default-1432484266776/yasearch-xb/vendor/branding/welcome/fx/welcome.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -495,33 +42,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="yavnoe_ogidanie.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="yavnoe_ogidanie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="367" column="51" selection-start-line="367" selection-start-column="51" selection-end-line="367" selection-end-column="51" />
+            <state relative-caret-position="300">
+              <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1481281359196" expanded="true" signature="5458:5498" placeholder="select * fro... setup" />
-                <marker date="1481281359196" expanded="true" signature="5458:5523" placeholder="select * fro... setup" />
-                <marker date="1481281359196" expanded="true" signature="5458:5524" placeholder="select * fro... setup" />
-                <marker date="1481281359196" expanded="true" signature="5458:5536" placeholder="select * fro... setup" />
+                <element signature="e#5439#5440#0" expanded="true" />
+                <element signature="e#5501#5502#0" expanded="true" />
+                <marker date="1481388437001" expanded="true" signature="5787:5854" placeholder="select * fro... setup" />
+                <marker date="1481388437001" expanded="true" signature="6599:6639" placeholder="select * fro... setup" />
+                <marker date="1481388437001" expanded="true" signature="6599:6664" placeholder="select * fro... setup" />
+                <marker date="1481388437001" expanded="true" signature="6599:6665" placeholder="select * fro... setup" />
+                <marker date="1481388437001" expanded="true" signature="6599:6677" placeholder="select * fro... setup" />
+                <marker date="1481388437001" expanded="true" signature="7259:7305" placeholder="update setup... " />
+                <marker date="1481388437001" expanded="true" signature="7259:7332" placeholder="update setup... " />
+                <marker date="1481388437001" expanded="true" signature="7259:7333" placeholder="update setup... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mydbtest.setup" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/561453/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/mydbtest.setup">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -529,10 +67,9 @@
       <file leaf-file-name="chernovik.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/IE8/chernovik.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="646">
               <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1481190997497" expanded="true" signature="2106:2125" placeholder="select * fro... users" />
                 <marker date="1481190997497" expanded="true" signature="2106:2138" placeholder="select * fro... users" />
                 <marker date="1481190997497" expanded="false" signature="5215:5230" placeholder=" { " />
@@ -545,21 +82,21 @@
       <file leaf-file-name="NavigatorHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/IE8/NavigatorHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="850">
               <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="udalit.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="udalit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/IE8/udalit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -631,11 +168,11 @@
         <option value="$PROJECT_DIR$/src/main/java/IE8/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/IE8/sozdat_udalit.java" />
         <option value="$PROJECT_DIR$/src/main/java/IE8/TimeSinhron.java" />
-        <option value="$PROJECT_DIR$/src/main/java/IE8/udalit.java" />
         <option value="$PROJECT_DIR$/src/main/java/IE8/NavigatorHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/HelperBasePakage/SikuliHelper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/IE8/chernovik.java" />
+        <option value="$PROJECT_DIR$/src/main/java/IE8/udalit.java" />
         <option value="$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java" />
       </list>
     </option>
@@ -754,8 +291,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
-    <option name="width" value="1448" />
-    <option name="height" value="864" />
+    <option name="width" value="1372" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -783,32 +320,33 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -818,11 +356,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -840,11 +378,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
+              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -864,61 +402,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelperBasePakage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumAndSikuli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -941,7 +426,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SeleniumAndSikuli\src\main\java\8version" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.yavnoe_ogidanie">
+  <component name="RunManager" selected="JUnit.udalit.IE8_udalit_cenovoe">
     <configuration default="false" name="yavnoe_ogidanie.IE8_sozdat_cenovoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -955,32 +440,6 @@
       <option name="PACKAGE_NAME" value="IE8" />
       <option name="MAIN_CLASS_NAME" value="IE8.yavnoe_ogidanie" />
       <option name="METHOD_NAME" value="IE8_sozdat_cenovoe" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="udalit.IE8_udalit_cenovoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="IE8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SeleniumAndSikuli" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="IE8" />
-      <option name="MAIN_CLASS_NAME" value="IE8.udalit" />
-      <option name="METHOD_NAME" value="IE8_udalit_cenovoe" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1287,6 +746,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -1452,6 +912,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1467,20 +933,45 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="false" name="udalit.IE8_udalit_cenovoe" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="IE8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SeleniumAndSikuli" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="IE8" />
+      <option name="MAIN_CLASS_NAME" value="IE8.udalit" />
+      <option name="METHOD_NAME" value="IE8_udalit_cenovoe" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie.IE8_sozdat_cenovoe" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.udalit.IE8_udalit_cenovoe" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.udalit.IE8_udalit_cenovoe" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie.IE8_sozdat_cenovoe" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.chernovik.chernoviK" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.chernovik" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.chernovik" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.chernovik.chernoviK" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie.IE8_sozdat_cenovoe" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.udalit.IE8_udalit_cenovoe" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie.IE8_sozdat_cenovoe" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.yavnoe_ogidanie" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.chernovik" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.chernovik.chernoviK" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -1526,43 +1017,44 @@
       <option name="presentableId" value="Default" />
       <updated>1479983773481</updated>
       <workItem from="1481163388102" duration="25903000" />
+      <workItem from="1481281928029" duration="21875000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="yavnoe_ogidanie - 2016.12.08 at 23h 35m 52s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.10 at 22h 52m 30s.xml">
+      <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.08 at 23h 37m 57s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.10 at 22h 56m 04s.xml">
+      <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.08 at 23h 43m 29s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.10 at 23h 00m 02s.xml">
+      <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.08 at 23h 43m 32s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 00h 36m 03s.xml">
+      <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.09 at 13h 39m 25s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 00h 36m 34s.xml">
+      <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.09 at 13h 39m 28s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.10 at 22h 51m 58s.xml">
+      <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.09 at 13h 39m 58s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.10 at 22h 54m 17s.xml">
+      <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.09 at 16h 24m 40s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.10 at 22h 55m 14s.xml">
+      <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.09 at 16h 24m 43s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.10 at 22h 58m 07s.xml">
+      <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie - 2016.12.09 at 16h 58m 17s.xml">
-      <configuration name="yavnoe_ogidanie" configurationId="JUnit" />
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.10 at 23h 06m 50s.xml">
+      <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25903000" />
+    <option name="totallyTimeSpent" value="47778000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1574,23 +1066,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="864" extended-state="6" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1372" height="732" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32080537" sideWeight="0.47997138" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3181208" sideWeight="0.47997138" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39194632" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32080537" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4274062" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32403433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32403433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1951,42 +1443,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IE8/udalit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/561453/e1c79c75-dc4a-4aa4-9b3a-8da263b7cf90/mydbtest.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/561453/e1c79c75-dc4a-4aa4-9b3a-8da263b7cf90/mydbtest.users" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e1c79c75-dc4a-4aa4-9b3a-8da263b7cf90/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2010,37 +1478,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IE8/NavigatorHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="850">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/561453/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/mydbtest.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/561453/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/mydbtest.users" />
     <entry file="file://$PROJECT_DIR$/src/main/java/IE8/chernovik.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="646">
           <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1481190997497" expanded="true" signature="2106:2125" placeholder="select * fro... users" />
             <marker date="1481190997497" expanded="true" signature="2106:2138" placeholder="select * fro... users" />
             <marker date="1481190997497" expanded="false" signature="5215:5230" placeholder=" { " />
@@ -2049,30 +1505,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/561453/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/mydbtest.setup">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="dbDummy://dbtable:/561453/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/mydbtest.setup" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5439#5440#0" expanded="true" />
+            <element signature="e#5501#5502#0" expanded="true" />
+            <marker date="1481388437001" expanded="true" signature="5787:5854" placeholder="select * fro... setup" />
+            <marker date="1481388437001" expanded="true" signature="6599:6639" placeholder="select * fro... setup" />
+            <marker date="1481388437001" expanded="true" signature="6599:6664" placeholder="select * fro... setup" />
+            <marker date="1481388437001" expanded="true" signature="6599:6665" placeholder="select * fro... setup" />
+            <marker date="1481388437001" expanded="true" signature="6599:6677" placeholder="select * fro... setup" />
+            <marker date="1481388437001" expanded="true" signature="7259:7305" placeholder="update setup... " />
+            <marker date="1481388437001" expanded="true" signature="7259:7332" placeholder="update setup... " />
+            <marker date="1481388437001" expanded="true" signature="7259:7333" placeholder="update setup... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IE8/udalit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="367" column="51" selection-start-line="367" selection-start-column="51" selection-end-line="367" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1481281359196" expanded="true" signature="5458:5498" placeholder="select * fro... setup" />
-            <marker date="1481281359196" expanded="true" signature="5458:5523" placeholder="select * fro... setup" />
-            <marker date="1481281359196" expanded="true" signature="5458:5524" placeholder="select * fro... setup" />
-            <marker date="1481281359196" expanded="true" signature="5458:5536" placeholder="select * fro... setup" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
