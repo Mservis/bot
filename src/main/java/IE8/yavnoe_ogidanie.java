@@ -360,8 +360,11 @@ public class yavnoe_ogidanie {
 
            // System.out.println("Цена поменялась");
             element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[5]/input")));
-            element.click();
-            element.sendKeys(Keys.CONTROL + "a");
+           // element.click();
+           // element.sendKeys(Keys.CONTROL + "a");
+            char keyCode = '\u0001'; // ctr + a
+            //element.sendKeys  (Keys.CONTROL, "a");
+            element.sendKeys(""+ keyCode);
            // long mycena = (long) (cenalota[ilot] * (1 - (procent[ilot] / 100)));
             long mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
 
