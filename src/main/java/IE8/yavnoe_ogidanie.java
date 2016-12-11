@@ -83,7 +83,7 @@ public class yavnoe_ogidanie {
         postavshik = new Pattern("c:\\forsikuli\\ie8\\postavshik.png");
         DBdriver = new FabricMySQLDriver();
         DriverManager.registerDriver(DBdriver);
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydbtest", "root", "root");
+        connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
         }
 
     @Test
@@ -92,7 +92,7 @@ public class yavnoe_ogidanie {
         nachalovsegotesta = System.currentTimeMillis();
         auth(); //1 этап
         recstaraycena();
-     /*   for (iPovtor = 0; iPovtor<1200; iPovtor++)
+        /*for (iPovtor = 0; iPovtor<1200; iPovtor++)
         {*/
         gdemfas();
         recetap(2);
@@ -101,16 +101,16 @@ public class yavnoe_ogidanie {
         nagatSozatcenovoe();//4 этап
         podpisatCenovoe();//5 этап
         SikuliModalWidow();//добавить проверку в конце в друг цена поменялась
-        SikuliJavaPwd();//добавить проверку в конце в друг цена поменялась
+        //SikuliJavaPwd();//добавить проверку в конце в друг цена поменялась
         proverkaNaitiPodpisat();//добавить проверку в конце в друг цена поменялась
         SikuliPodpisatButton();//добавить проверку в конце в друг цена поменялась
         SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
         SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
-        //podpislosOk();
+
       //  nagatotpravit();
         pokazatskorostPodachi();//добавить проверку в конце в друг цена поменялась
 
-       /* zaitivzayavku();
+      /*  zaitivzayavku();
         udalizayavku();
         pokazatskorosUdaleniya();
         zaitivzayavku();
@@ -367,6 +367,10 @@ public class yavnoe_ogidanie {
             element.sendKeys(""+ keyCode);
            // long mycena = (long) (cenalota[ilot] * (1 - (procent[ilot] / 100)));
             long mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
+
+            /* Random myRandom = new Random();
+             int n = myRandom.nextInt(40);
+             mycena += n;*/
 
             element.sendKeys("" + mycena);
             element.sendKeys(Keys.TAB);
@@ -632,7 +636,7 @@ public class yavnoe_ogidanie {
             System.out.println("Нашел подписать = " + nashelpodpisat);
             System.out.println("long nachalo ="+nachalo);
             System.out.println("milis - long nachalo =" + (System.currentTimeMillis() - nachalo));
-            if ((System.currentTimeMillis() - nachalo) > 3000)
+            if ((System.currentTimeMillis() - nachalo) > 10000)
             {
                 podpisatCenovoe();
                 ispravitGluk();
@@ -754,28 +758,28 @@ public class yavnoe_ogidanie {
         okwindow.click(ok4);
     }
     private void SikuliJavaOtpravitButton() throws Exception{
-        okwindow.setRect(31, 625, 97, 40);
+       /* okwindow.setRect(31, 625, 97, 40);
         okwindow.wait(gotovotpravit, 10000);
         okwindow.setRect(217, 625, 84, 38);
         okwindow.click(otpravit);
-        System.out.println("Нажал отправить на сервер заявку");
+        System.out.println("Нажал отправить на сервер заявку");*/
         long startgdem = System.currentTimeMillis();
         while (!gdemelement(By.id("FileListRNEx:SignItemDisabled:"+(nomercenovogo))))
         {
 
-            if((System.currentTimeMillis() - startgdem) > 4000)// время ожидания элемента поле которого перегруз
+            if((System.currentTimeMillis() - startgdem) > 9000)// время ожидания элемента поле которого перегруз
             {
                 System.out.println("Подаюсь за ново из за ошибки неотправилось на сервер");
                 podpisatCenovoe();
                 SikuliModalWidow();
-                SikuliJavaPwd();
+               // SikuliJavaPwd();
                 proverkaNaitiPodpisat();
                 SikuliPodpisatButton();
                 SikuliJavaPwd2();
-                okwindow.setRect(31, 625, 97, 40);
+               /* okwindow.setRect(31, 625, 97, 40);
                 okwindow.wait(gotovotpravit, 10000);
                 okwindow.setRect(217, 625, 84, 38);
-                okwindow.click(otpravit);
+                okwindow.click(otpravit);*/
             }
         }  // ищет иконку котороя станет не активной если ценовое подписалось
         // while (gdemNotelement(By.xpath("//a[@id='FileListRNEx:SignItem:" + (nomercenovogo) + "']/img")));

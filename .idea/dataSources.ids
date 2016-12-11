@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - mydbtest@localhost" uuid="fed74842-0ab6-4679-9ad6-a3b2aae7fc1b">
+  <data-source name="MySQL - mydbtest@192.168.1.12" uuid="fed74842-0ab6-4679-9ad6-a3b2aae7fc1b">
     <database-info product="MySQL" version="5.7.16-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
@@ -38,28 +38,31 @@
       <column id="10" parent="3" name="nomerzakupki">
         <data-type>int(11)</data-type>
       </column>
-      <column id="11" parent="3" name="datestart">
-        <data-type>date</data-type>
+      <column id="11" parent="3" name="timestart">
+        <data-type>time(6)</data-type>
       </column>
-      <column id="12" parent="3" name="dateend">
-        <data-type>date</data-type>
+      <column id="12" parent="3" name="timeend">
+        <data-type>time(6)</data-type>
       </column>
       <column id="13" parent="3" name="lot">
         <data-type>int(11)</data-type>
       </column>
       <column id="14" parent="3" name="procent">
-        <data-type>int(1)</data-type>
+        <data-type>float</data-type>
       </column>
       <column id="15" parent="3" name="glavni">
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="16" parent="3" name="cena">
         <data-type>int(11)</data-type>
       </column>
-      <column id="16" parent="3" name="mincena">
-        <data-type>int(11)</data-type>
+      <column id="17" parent="3" name="skidka">
+        <data-type>float</data-type>
       </column>
-      <column id="17" parent="3" name="maxcena">
-        <data-type>int(11)</data-type>
+      <column id="18" parent="3" name="etap">
+        <data-type>int(2)</data-type>
       </column>
-      <key id="18" parent="3" name="PRIMARY">
+      <key id="19" parent="3" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

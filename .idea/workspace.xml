@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30c4ebf5-7080-4a89-a47d-c5830e0e6228" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/IE8/yavnoe_ogidanie.class" afterPath="$PROJECT_DIR$/target/classes/IE8/yavnoe_ogidanie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java" afterPath="$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java" />
     </list>
@@ -43,18 +47,13 @@
       <file leaf-file-name="yavnoe_ogidanie.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="475" column="5" selection-start-line="475" selection-start-column="5" selection-end-line="475" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1481426396126" expanded="true" signature="5787:5854" placeholder="select * fro... setup" />
-                <marker date="1481426396126" expanded="true" signature="6599:6639" placeholder="select * fro... setup" />
-                <marker date="1481426396126" expanded="true" signature="6599:6664" placeholder="select * fro... setup" />
-                <marker date="1481426396126" expanded="true" signature="6599:6665" placeholder="select * fro... setup" />
-                <marker date="1481426396126" expanded="true" signature="6599:6677" placeholder="select * fro... setup" />
-                <marker date="1481426396126" expanded="true" signature="7259:7305" placeholder="update setup... " />
-                <marker date="1481426396126" expanded="true" signature="7259:7332" placeholder="update setup... " />
-                <marker date="1481426396126" expanded="true" signature="7259:7333" placeholder="update setup... " />
+                <marker date="1481447370817" expanded="true" signature="5768:5835" placeholder="select * fro... setup" />
+                <marker date="1481447370817" expanded="true" signature="6580:6646" placeholder="select * fro... setup" />
+                <marker date="1481447370817" expanded="true" signature="7240:7313" placeholder="update setup... " />
               </folding>
             </state>
           </provider>
@@ -67,10 +66,6 @@
               <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <marker date="1481351002000" expanded="true" signature="2106:2125" placeholder="select * fro... users" />
-                <marker date="1481351002000" expanded="true" signature="2106:2138" placeholder="select * fro... users" />
-                <marker date="1481351002000" expanded="false" signature="5215:5230" placeholder=" { " />
-                <marker date="1481351002000" expanded="false" signature="5269:5275" placeholder=" }" />
               </folding>
             </state>
           </provider>
@@ -93,9 +88,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -290,8 +283,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
-    <option name="width" value="1372" />
-    <option name="height" value="732" />
+    <option name="width" value="1448" />
+    <option name="height" value="864" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -318,7 +311,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,7 +394,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1020,43 +1013,45 @@
       <workItem from="1481402297439" duration="360000" />
       <workItem from="1481407344198" duration="27000" />
       <workItem from="1481407402051" duration="3052000" />
+      <workItem from="1481442670315" duration="564000" />
+      <workItem from="1481443255561" duration="2865000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 04h 07m 09s.xml">
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 14h 10m 50s.xml">
       <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 04h 08m 47s.xml">
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 14h 18m 03s.xml">
       <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 04h 10m 43s.xml">
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 14h 19m 55s.xml">
       <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 09h 22m 21s.xml">
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 14h 25m 52s.xml">
       <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 09h 30m 50s.xml">
+    <history-entry file="udalit_IE8_udalit_cenovoe - 2016.12.11 at 15h 00m 08s.xml">
       <configuration name="udalit.IE8_udalit_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 04h 06m 28s.xml">
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 14h 12m 07s.xml">
       <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 04h 08m 10s.xml">
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 14h 19m 09s.xml">
       <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 04h 10m 03s.xml">
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 14h 22m 03s.xml">
       <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 09h 21m 37s.xml">
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 14h 57m 01s.xml">
       <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 09h 35m 06s.xml">
+    <history-entry file="yavnoe_ogidanie_IE8_sozdat_cenovoe - 2016.12.11 at 15h 06m 25s.xml">
       <configuration name="yavnoe_ogidanie.IE8_sozdat_cenovoe" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51217000" />
+    <option name="totallyTimeSpent" value="54646000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1068,7 +1063,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1372" height="732" extended-state="7" />
+    <frame x="-4" y="-4" width="1448" height="864" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1079,11 +1074,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39194632" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42577487" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42550334" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21316166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32403433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1453,21 +1448,8 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/561453/e1c79c75-dc4a-4aa4-9b3a-8da263b7cf90/mydbtest.users" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e1c79c75-dc4a-4aa4-9b3a-8da263b7cf90/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1-sources.jar!/org/openqa/selenium/By.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="437" column="28" selection-start-line="437" selection-start-column="28" selection-end-line="437" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e1c79c75-dc4a-4aa4-9b3a-8da263b7cf90/console.sql" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1-sources.jar!/org/openqa/selenium/By.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1476,13 +1458,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fed74842-0ab6-4679-9ad6-a3b2aae7fc1b/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/java/IE8/NavigatorHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1500,10 +1476,6 @@
           <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1481351002000" expanded="true" signature="2106:2125" placeholder="select * fro... users" />
-            <marker date="1481351002000" expanded="true" signature="2106:2138" placeholder="select * fro... users" />
-            <marker date="1481351002000" expanded="false" signature="5215:5230" placeholder=" { " />
-            <marker date="1481351002000" expanded="false" signature="5269:5275" placeholder=" }" />
           </folding>
         </state>
       </provider>
@@ -1513,26 +1485,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IE8/yavnoe_ogidanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="475" column="5" selection-start-line="475" selection-start-column="5" selection-end-line="475" selection-end-column="5" />
+        <state relative-caret-position="380">
+          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1481426396126" expanded="true" signature="5787:5854" placeholder="select * fro... setup" />
-            <marker date="1481426396126" expanded="true" signature="6599:6639" placeholder="select * fro... setup" />
-            <marker date="1481426396126" expanded="true" signature="6599:6664" placeholder="select * fro... setup" />
-            <marker date="1481426396126" expanded="true" signature="6599:6665" placeholder="select * fro... setup" />
-            <marker date="1481426396126" expanded="true" signature="6599:6677" placeholder="select * fro... setup" />
-            <marker date="1481426396126" expanded="true" signature="7259:7305" placeholder="update setup... " />
-            <marker date="1481426396126" expanded="true" signature="7259:7332" placeholder="update setup... " />
-            <marker date="1481426396126" expanded="true" signature="7259:7333" placeholder="update setup... " />
+            <marker date="1481447370817" expanded="true" signature="5768:5835" placeholder="select * fro... setup" />
+            <marker date="1481447370817" expanded="true" signature="6580:6646" placeholder="select * fro... setup" />
+            <marker date="1481447370817" expanded="true" signature="7240:7313" placeholder="update setup... " />
           </folding>
         </state>
       </provider>
