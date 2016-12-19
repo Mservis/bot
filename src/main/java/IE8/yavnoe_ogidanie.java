@@ -35,7 +35,7 @@ public class yavnoe_ogidanie {
     private WebElement element;
     private long nachalotesta, nachalovsegotesta;
     private double sredneePodachi, sredneeUdalenia, minPodachi, maxPodachi, minUdalenia, maxUdalenia;
-    private int nomercenovogo, iPovtor;
+    private int nomercenovogo, dostarta, nomerpodayshego, iPovtor;
     private Region okwindow;
     private Pattern ok2,inputPass,ok3,gotovotpravit,podpisat, input2, ok4, otpravit, otpravil, pwdOk, pustoijava, gotovpodpisat, postavshik;
     private long zakupka;
@@ -48,8 +48,10 @@ public class yavnoe_ogidanie {
     private float[] procent, skidka;
     @Before
     public void setUp() throws Exception {
-    nomerZayavki = "1112636"; //номер заявки в которой учавствует
-    zakupka = 286023;//номер закупки
+    nomerZayavki = "1111550"; //номер заявки в которой учавствует
+    zakupka = 283516;//номер закупки
+    dostarta = 70; //за сколько секунд до окончания нужно подать заявку
+    nomerpodayshego = 2; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
     lot = new int[1];// количество лотов
     lot[0] = 1;//номер лота в заявке
     //lot[1] = 2;//номер лота в заявке
@@ -90,12 +92,13 @@ public class yavnoe_ogidanie {
     public void IE8_sozdat_cenovoe() throws Exception {
         nomercenovogo--;
         nachalovsegotesta = System.currentTimeMillis();
+
         auth(); //1 этап
-        recstaraycena();
         /*for (iPovtor = 0; iPovtor<1200; iPovtor++)
         {*/
-        gdemfas();
-        recetap(2);
+
+        //gdemfas();
+
         zapolnitLoti(); //2 этап
         nagatprodolgit();//3 этап
         nagatSozatcenovoe();//4 этап
@@ -126,6 +129,32 @@ public class yavnoe_ogidanie {
             fail(verificationErrorString);
         }
     }
+    private void gdemstart() throws InterruptedException{
+        long sechas = 0;
+        long nachalo = 0;
+        boolean perv = false;
+        do {
+            try {
+
+                //connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
+                statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka + " AND lot = 1");
+                while (resultSet.next()) {
+                    Time timeend = resultSet.getTime("timeend");
+                    nachalo = ((timeend.getHours() * 60 + timeend.getMinutes()) * 60 + timeend.getSeconds()-dostarta);
+                    Date date = new Date();
+                    sechas = ((date.getHours() * 60 + date.getMinutes()) * 60 + date.getSeconds());
+                }
+            } catch (SQLException e) {
+                System.err.println("Не удлаось подключиться к драйверу базы данных");
+            }
+            System.out.println("Осталось " +(nachalo - sechas));
+
+            if (perv) Thread.sleep(500);
+            perv = true;
+        } while (nachalo > sechas);
+        System.out.println("Старт ");
+    }
     private void recstaraycena()
     {
         recperem();
@@ -134,28 +163,41 @@ public class yavnoe_ogidanie {
             staryacenalota[i] = cenalota[i];
         }
     }
+    private void gdempervogo() throws InterruptedException{
+        int etap = 0;
+        boolean perv = false;
+        do {
+            try {
+                statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka + " AND lot = 1");
+                while (resultSet.next()) {
+                    etap = resultSet.getInt("etap");
+                }
+            } catch (SQLException e) {
+                System.err.println("Не удлаось подключиться к драйверу базы данных");
+            }
+            if (perv) Thread.sleep(300);
+            perv = true;
+            System.out.println("Этап = " + etap);
+        } while (etap != 2); // ждем пока первый комп не уйдет на второй этап(т.е. начнет подоваться)
+    }
+
     private void nagatotpravit(){
         driver.findElement(By.id("SubmitBtn")).click();
     }
-    private void gdemfas() throws InterruptedException {
-        //два условия - этап = 0 или поменялась цена
-        int etap = 0;
+    private void gdemizmeneniyaceni() throws InterruptedException {
+        //два условия - этап != 0(Заначит глпавный уже подаеться) или поменялась цена
         int cenapom = 0;
-  do {
-      try {
-          statement = connection.createStatement();
-          ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka + " AND lot = 1");
-          while (resultSet.next()) {
-              etap = resultSet.getInt("etap");
-          }
-      } catch (SQLException e) {
-          System.err.println("Не удлаось подключиться к драйверу базы данных");
-      }
-      Thread.sleep(500);
+        boolean perv = false;
+        recstaraycena();
+    do{
       cenapom = cenapomenyalas();
       System.out.println("Цена поменялась = " + cenapom);
-      System.out.println("Этап = " + etap);
-  }while (cenapom != 2 && etap !=0); // если цена поменялась но продолжать можно тогд 1, если цена помянялась ниже чем моя тогда 2, если нет то 0
+
+      if (perv) Thread.sleep(500);
+      perv = true;
+  }while (cenapom == 0 ); // если цена поменялась но продолжать можно тогда 1, если цена помянялась ниже чем моя тогда 2, если нет то 0
+ // }while (cenapom == 0); // если цена поменялась но продолжать можно тогда 1, если цена помянялась ниже чем моя тогда 2, если нет то 0
     }
     private void recperem(){
         for (int i = 0; i<lot.length;i++) {
@@ -186,7 +228,7 @@ public class yavnoe_ogidanie {
         } catch (SQLException e) {
             System.err.println("Не удлаось подключиться к драйверу базы данных");
         }
-
+  System.out.println("Записал этап");
     }
 
     private void udalilOk(){
@@ -259,7 +301,7 @@ public class yavnoe_ogidanie {
         }
        // element = wait.until(presenceOfElementLocated(By.id("FileListRNEx:SignItemDisabled:1")));//подождать пока иконка подвисать станет неактивной
     }*/
-    private void auth()
+    private void auth () throws Exception
     {
 
         driver.manage().window().maximize();
@@ -267,12 +309,19 @@ public class yavnoe_ogidanie {
         element = wait.until(presenceOfElementLocated(By.id("passwordField")));
         element.sendKeys("123456");
         driver.findElement(By.id("SubmitButton")).click();
+        if  (nomerpodayshego == 1) gdemstart();
+        else if (nomerpodayshego == 2){
+            gdempervogo();
+            gdemizmeneniyaceni();
+        }
+
         element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
         baseUrl = driver.getCurrentUrl();
         nachalotesta = System.currentTimeMillis();
         element.click();
         element = wait.until(presenceOfElementLocated(By.linkText("Строки")));
         element.click();
+        if  (nomerpodayshego == 1) recetap(2);
 
     }
     private void nagatSozatcenovoe()

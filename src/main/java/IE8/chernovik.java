@@ -2,6 +2,7 @@ package IE8;
 
 //import java.util.regex.Pattern;
 import java.sql.*;
+import java.util.Date;
 import HelperBasePakage.SikuliHelper;
 import org.junit.After;
 import org.junit.Before;
@@ -9,6 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 import com.mysql.fabric.jdbc.FabricMySQLDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.SystemClock;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Region;
@@ -23,6 +25,10 @@ import static org.junit.Assert.fail;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class chernovik {
+    private Driver DBdriver;
+    private Connection connection;
+    private Statement statement;
+    private int dostarta;
   //  private WebDriver driver;
     //private String baseUrl;
    // private boolean acceptNextAlert = true;
@@ -36,6 +42,10 @@ public class chernovik {
 
     @Before
     public void setUp() throws Exception {
+        DBdriver = new FabricMySQLDriver();
+        DriverManager.registerDriver(DBdriver);
+        connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
+        dostarta = 60;
        // sikulihelper = new SikuliHelper();
         //sikulihelper.javaPWD();
        /*driver = new InternetExplorerDriver();
@@ -50,26 +60,38 @@ public class chernovik {
 
     @Test
     public void chernoviK() throws Exception {
-       // funkcia();
-       Connection connection;
-
-        try {
-            Driver driver2 = new FabricMySQLDriver();
-            DriverManager.registerDriver(driver2);
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydbtest", "root", "root");
-            Statement statement = connection.createStatement();
-
-            ResultSet resultSet = statement.executeQuery("select * from users where id = 2");
-            while (resultSet.next()){
-                String id = resultSet.getString("name");
-                System.out.println("Резульат1 "+ id);
-            }
-            //System.out.println("Резульат 2"+ resultSet.getString(2));
-            connection.close();
-        } catch (SQLException e) {
-            System.err.println("Не удлаось подключиться к драйверу базы данных");
+        for (int i = 0; i<20;i++) {
+            System.out.println(System.currentTimeMillis() + "");
+            //Thread.sleep(1000);
         }
-        System.out.println("Дошло до сюда ");
+
+        // funkcia();
+      /* Connection connection;
+        Driver driver2 = new FabricMySQLDriver();
+        DriverManager.registerDriver(driver2);
+        Statement statement;
+        connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");*/
+       long sechas = 0;
+        long nachalo = 0;
+        do {
+            try {
+
+                //connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
+                statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + 286023 + " AND lot = " + 1);
+                while (resultSet.next()) {
+                    Time timeend = resultSet.getTime("timeend");
+                    nachalo = ((timeend.getHours() * 60 + timeend.getMinutes()) * 60 + timeend.getSeconds()-dostarta);
+                    Date date = new Date();
+                    sechas = ((date.getHours() * 60 + date.getMinutes()) * 60 + date.getSeconds());
+                    }
+            } catch (SQLException e) {
+                System.err.println("Не удлаось подключиться к драйверу базы данных");
+            }
+            System.out.println("Осталось " +(nachalo - sechas));
+            Thread.sleep(500);
+        } while (nachalo > sechas);
+        System.out.println("Старт ");
         //sikulihelper.javaPWD();
        /* driver.manage().window().maximize();
         driver.navigate().to("https://tender.sk.kz/OA_HTML/AppsLocalLogin.jsp");
