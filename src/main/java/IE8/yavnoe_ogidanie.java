@@ -48,14 +48,15 @@ public class yavnoe_ogidanie {
     private float[] procent, skidka;
     @Before
     public void setUp() throws Exception {
-    nomerZayavki = "1111550"; //номер заявки в которой учавствует
-    zakupka = 283516;//номер закупки
+        //Гуцалов
+    nomerZayavki = "1120100"; //номер заявки в которой учавствует
+    zakupka = 286028;//номер закупки
     dostarta = 70; //за сколько секунд до окончания нужно подать заявку
-    nomerpodayshego = 2; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
+    nomerpodayshego = 1; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
     lot = new int[1];// количество лотов
     lot[0] = 1;//номер лота в заявке
     //lot[1] = 2;//номер лота в заявке
-    nomercenovogo = 2; //каким номером по счету будет в ценовое предложене в общем списке с пркикрипленными файлами.
+    nomercenovogo = 1; //каким номером по счету будет в ценовое предложене в общем списке с пркикрипленными файлами.
         cenalota = new long[lot.length];
         procent = new float[lot.length];
         skidka = new float[lot.length];
@@ -105,7 +106,7 @@ public class yavnoe_ogidanie {
         podpisatCenovoe();//5 этап
         SikuliModalWidow();//добавить проверку в конце в друг цена поменялась
         //SikuliJavaPwd();//добавить проверку в конце в друг цена поменялась
-        proverkaNaitiPodpisat();//добавить проверку в конце в друг цена поменялась
+      // убрал на тендере  proverkaNaitiPodpisat();//добавить проверку в конце в друг цена поменялась
         SikuliPodpisatButton();//добавить проверку в конце в друг цена поменялась
         SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
         SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
@@ -303,17 +304,17 @@ public class yavnoe_ogidanie {
     }*/
     private void auth () throws Exception
     {
-
+        if (nomerpodayshego == 1) recetap(0);
         driver.manage().window().maximize();
         driver.navigate().to("https://tender.sk.kz/OA_HTML/AppsLocalLogin.jsp");
         element = wait.until(presenceOfElementLocated(By.id("passwordField")));
         element.sendKeys("123456");
         driver.findElement(By.id("SubmitButton")).click();
-        if  (nomerpodayshego == 1) gdemstart();
+        /*if  (nomerpodayshego == 1) gdemstart();
         else if (nomerpodayshego == 2){
             gdempervogo();
             gdemizmeneniyaceni();
-        }
+        }*/
 
         element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
         baseUrl = driver.getCurrentUrl();
@@ -382,12 +383,15 @@ public class yavnoe_ogidanie {
    private void zapolnitLoti()
    {
 
+
        ProverkaZashelvZapolnenie();
       recperem();
      // do
       //{
+       System.out.println("Переменные записанны");
        for (int i =0;i<lot.length;i++)
        {
+           System.out.println("Заполняю лоты");
            zapolnitLot(lot[i],i);
        }
       //}while (cenapomenyalas() != 0);
@@ -407,8 +411,8 @@ public class yavnoe_ogidanie {
         Double dbl0 = new Double(str0);
         int int0 = (int) (dbl0 * (1 - (ponizitNa/100)));*/
 
-           // System.out.println("Цена поменялась");
-            element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[5]/input")));
+           // System.out.println("Цена поменялась");                 //span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[6]/input
+            element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[6]/input")));
            // element.click();
            // element.sendKeys(Keys.CONTROL + "a");
             char keyCode = '\u0001'; // ctr + a
@@ -423,14 +427,15 @@ public class yavnoe_ogidanie {
 
             element.sendKeys("" + mycena);
             element.sendKeys(Keys.TAB);
-            element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[7]/span")));
+
+            element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[9]/span")));
             String kolichStr = element.getText();// количесво 1
             int kolichestvo = Integer.parseInt(kolichStr);
             int povtor = 0;
             long cenaStr = 0;
             do {
                 do {
-                    cenaStr = ProchitatCeny(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[8]/span"));//общая цена
+                    cenaStr = ProchitatCeny(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[10]/span"));//общая цена
                 } while (cenaStr == 0);
                 //"Строка2   "
                 System.out.println("Моя цена для лота" + lot + "  " + mycena);
@@ -533,8 +538,11 @@ public class yavnoe_ogidanie {
     private void ProverkaZashelvZapolnenie()//проверка
     {
         long startgdem = System.currentTimeMillis();
+
         while (!gdemelement(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[4]/span"))) // ищет поле с ценой
         {
+
+            System.out.println("Ждем элемент = " + gdemelement(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[4]/span")) );
             if (((System.currentTimeMillis() - startgdem)> 9000) || (gdemelement(By.cssSelector("h1.x5r")) )) // время ожидания элемента поле которого перегруз
             {
                 zaitivzayavku();
@@ -542,6 +550,7 @@ public class yavnoe_ogidanie {
             }
 
         }
+        System.out.println("Ждем элемент закончился");
     }
     private boolean isElementPresent(By by) {
         try {
@@ -670,11 +679,12 @@ public class yavnoe_ogidanie {
         boolean nashelpodpisat = true;
         int povtor = 1;
         do{
-            //okwindow.setRect(354,579,120,94);
-            okwindow.setRect(146, 589, 76, 23);
 
+
+           // okwindow.setRect(146, 589, 76, 23); // на тренеровках
+            okwindow.setRect(60,585,220,152);  // в тендере
             try {
-                okwindow.wait(gotovpodpisat, 2);
+                okwindow.wait(gotovpodpisat, 4);
                 nashelpodpisat = true;
             }
             catch (FindFailed e)
@@ -685,14 +695,15 @@ public class yavnoe_ogidanie {
             System.out.println("Нашел подписать = " + nashelpodpisat);
             System.out.println("long nachalo ="+nachalo);
             System.out.println("milis - long nachalo =" + (System.currentTimeMillis() - nachalo));
-            if ((System.currentTimeMillis() - nachalo) > 10000)
+            if ((System.currentTimeMillis() - nachalo) > 15000)
             {
                 podpisatCenovoe();
                 ispravitGluk();
                 SikuliModalWidow();
                 SikuliJavaPwd();
                 nachalo = System.currentTimeMillis();
-                okwindow.setRect(146, 589, 76, 23);
+                // okwindow.setRect(146, 589, 76, 23); // на тренеровках
+                okwindow.setRect(129,642,72,23);  // в тендере
 
                 try {
                     okwindow.wait(gotovpodpisat, 2);
@@ -761,9 +772,12 @@ public class yavnoe_ogidanie {
         while (pustijavabool);
     }*/
     private void SikuliPodpisatButton() throws Exception{
-        okwindow.setRect(146, 589, 76, 23);
-        okwindow.wait(gotovpodpisat, 10000);
-        okwindow.setRect(123, 628, 90, 32);
+        // okwindow.setRect(146, 589, 76, 23); // на тренеровках
+       // убрал okwindow.setRect(129,642,72,23);  // в тендере
+       // убрал okwindow.wait(gotovpodpisat, 10000);
+        // убрал okwindow.setRect(123, 628, 90, 32);
+        okwindow.setRect(123, 599, 95, 36);
+        okwindow.wait(podpisat, 20000); //добавил
         okwindow.click(podpisat);
         okwindow.setRect(597, 433, 245, 54);
         okwindow.wait(input2, 10000);
