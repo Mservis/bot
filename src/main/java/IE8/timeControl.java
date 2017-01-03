@@ -2,55 +2,81 @@ package IE8;
 
 //import java.util.regex.Pattern;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import com.mysql.fabric.jdbc.FabricMySQLDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.SystemClock;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
-
+import org.sikuli.script.*;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfNestedElementLocatedBy;
 
 public class timeControl {
-
+    private WebElement element;
+    private WebDriverWait wait;
+    private Driver DBdriver;
     private WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
-    private String nomerZayavki;
+    private String nomerZayavki, BaseUrl;
     private int lot;
     private long zakupka;
     private Connection connection;
-
+    private Region okwindow;
+    private long onlinecena;
+    private Date date;
+    private Pattern ok2,inputPass,ok3,gotovotpravit,podpisat, input2, ok4, otpravit, otpravil, pwdOk, pustoijava, gotovpodpisat, postavshik;
     @Before
     public void setUp() throws Exception {
-        nomerZayavki = "1112636";
-        zakupka = 286023;
+        nomerZayavki = "1129111";
+        zakupka = 289323;
         driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        ok2 = new Pattern("c:\\forsikuli\\ie8\\ok.png");
+        DBdriver = new FabricMySQLDriver();
+        DriverManager.registerDriver(DBdriver);
+        wait = new WebDriverWait(driver, 30000);
+        connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
+        date = new Date();
         auth();
+
     }
 
     @Test
     public void slediZaVremenem() throws Exception {
         int i = 0;
         while (i == 0) {
-            chitatvremia();
+            // chitatvremia();
+            chatatvremyaend();
             chitatcenu();
+            System.out.println("Цена = "+ onlinecena);
+            System.out.println("Время завершения = "+ date.getTime());
             allrec();
             i = 0;
-       }
+            Thread.sleep(500);
+            driver.findElement(By.id("intervalButton")).click();
+            /*if ((System.currentTimeMillis() - refreshtimer) > 1000) {
+                driver.navigate().to(BaseUrl);
+               element = wait.until(presenceOfElementLocated(By.xpath("//tr[@id='CloseDate__xc_']/td[3]/span")));
+                refreshtimer = System.currentTimeMillis();
+            }*/
+        }
         //ProcessBuilder builder = new ProcessBuilder( new String[] { "cmd.exe", "ping 192.168.0.12"});
         //builder.start();
 
@@ -77,24 +103,98 @@ public class timeControl {
             fail(verificationErrorString);
         }
     }
+    private void SikuliModalWidow() throws Exception {
+        System.out.println("sikulimodal");
+        okwindow.setRect(754, 485, 115, 73);
+        System.out.println("setrec");
+        okwindow.wait(ok2, 10000);
+        System.out.println("wait");
+        okwindow.click(ok2);
+
+    }
     private void chitatcenu()
     {
-        String myrez0 = driver.findElement(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr["+(1+lot)+"]/td[4]/span")).getText();
-        String str0 = "";
-        int i = 0;
-        for (i = 0; myrez0.charAt(i) != '.'; i++) {
-            if (myrez0.charAt(i) != ',') {
-                str0 += myrez0.charAt(i);
+        // driver.findElement(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")).click();
+        // String myrez0 = driver.findElement(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")).getText();
+        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")));
+        //убрал String myrez0 = driver.findElement(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")).getText();
+        try {
+            String myrez0 = element.getText();
+            String str = "";
+            int i = 0;
+            for (i = 0; myrez0.charAt(i) != '.'; i++) {
+                if (myrez0.charAt(i) != ',') {
+                    str += myrez0.charAt(i);
+                }
             }
+            onlinecena =  Integer.parseInt(str);
+
+        } catch (NoSuchElementException e) {
+
+        } catch (UnhandledAlertException e) {
+
+        } catch (StaleElementReferenceException e) {
+
+        } catch (ElementNotVisibleException e) {
+
+        } catch (JavascriptException e){
+
+        }
+
+
+
+    }
+    private void chatatvremyaend(){
+        //tr[@id='CloseDate__xc_']/td[3]/span
+        int hh = 0;
+        int mm = 0;
+        element = wait.until(presenceOfElementLocated(By.xpath("//tr[@id='CloseDate__xc_']/td[3]/span")));
+        //убрал String myrez0 = driver.findElement(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")).getText();
+        try {
+            String myrez0 = element.getText();
+            System.out.println(myrez0);
+            String minstr = "";
+            String hourstr = "";
+            int i = 0;
+            for (i = 0; i<19; i++) {
+                //if (myrez0.charAt(i) != ',')
+                if (i >= 11 && i < 13)
+                {
+                    hourstr += myrez0.charAt(i);
+                }
+                if (i >= 14 && i < 16)
+                {
+                    minstr += myrez0.charAt(i);
+                }
+            }
+            System.out.println(hourstr);
+            System.out.println(minstr);
+            date.setHours(Integer.parseInt(hourstr));
+            date.setMinutes(Integer.parseInt(minstr));
+            date.setSeconds(0);
+
+        } catch (NoSuchElementException e) {
+
+        } catch (UnhandledAlertException e) {
+
+        } catch (StaleElementReferenceException e) {
+
+        } catch (ElementNotVisibleException e) {
+
+        } catch (JavascriptException e){
+
         }
     }
     private void allrec() {
-        int etap = 0;
-        String recetap = "update setup set etap = ? where nomerzakupki =" + zakupka + " AND lot = 1";
+        // int etap = 0;
+        String recetap = "update setup set cena = ?, timeend = ? where nomerzakupki =" + zakupka + " AND lot = 1";
         PreparedStatement preparedStatement = null;
         try {
             preparedStatement = connection.prepareStatement(recetap);
-            preparedStatement.setInt(1, etap);
+            preparedStatement.setLong(1, onlinecena);
+            long vrem = date.getTime();
+            java.sql.Time sqlTime = new java.sql.Time(vrem);
+            preparedStatement.setTime(2,sqlTime);
             preparedStatement.execute();
             //connection.close();
         } catch (SQLException e) {
@@ -187,14 +287,16 @@ public class timeControl {
         java.lang.Runtime.getRuntime().exec(args);*/
 
     }
-    private void auth()
+    private void auth() throws Exception
     {
         driver.manage().window().maximize();
         driver.navigate().to("https://tender.sk.kz/OA_HTML/AppsLocalLogin.jsp");
         driver.findElement(By.id("passwordField")).sendKeys("123456");
         driver.findElement(By.id("SubmitButton")).click();
         driver.findElement(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")).click();
-
+        driver.findElement(By.id("MonitorBiddingBtn")).click();
+        // SikuliModalWidow();
+        Thread.sleep(10000);
 
     }
     private boolean isElementPresent(By by) {

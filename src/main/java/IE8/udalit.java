@@ -27,7 +27,7 @@ public class udalit {
         driver = new InternetExplorerDriver();
         //baseUrl = "http://tender.sk.kz/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        nomerZayavki = "1112636";
+        nomerZayavki = "1129682";
     }
 
     @Test
@@ -54,7 +54,7 @@ public class udalit {
         driver.findElement(By.id("SubmitButton")).click();
         //*********************************
         driver.findElement(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")).click();//зайти в заявку
-        driver.findElement(By.xpath("//a[@id='FileListRNEx:DeleteItem:1']/img")).click();
+        driver.findElement(By.xpath("//a[@id='FileListRNEx:DeleteItem:0']/img")).click();
         Region okwin = new Region(749,479,100,49);
         okwin.click(ok2);//jjj
         Thread.sleep(9000);
