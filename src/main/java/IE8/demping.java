@@ -26,11 +26,12 @@ import java.util.Random;
 
 import static org.junit.Assert.fail;
 
-public class yavnoe_ogidanie {
+public class demping {
     private WebDriver driver;
     private String baseUrl, nomerZayavki;
     private WebDriverWait wait;
     private boolean acceptNextAlert = true;
+    private boolean pervzapol = false;
     private StringBuffer verificationErrors = new StringBuffer();
     private WebElement element;
     private long nachalotesta, nachalovsegotesta;
@@ -49,9 +50,9 @@ public class yavnoe_ogidanie {
     @Before
     public void setUp() throws Exception {
         //Гуцалов
-        nomerZayavki = "1147453"; //номер заявки в которой учавствует
+        nomerZayavki = "1132305"; //номер заявки в которой учавствует
         zakupka = 287921;//номер закупки
-        dostarta = 440000; //за сколько секунд до окончания нужно подать заявку
+        dostarta = 65; //за сколько секунд до окончания нужно подать заявку
         nomerpodayshego = 1; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
         lot = new int[1];// количество лотов
         lot[0] = 1;//номер лота в заявке
@@ -90,30 +91,21 @@ public class yavnoe_ogidanie {
     }
 
     @Test
-    public void IE8_sozdat_cenovoe() throws Exception {
+    public void go_demping() throws Exception {
         nomercenovogo--;
         nachalovsegotesta = System.currentTimeMillis();
 
         auth(); //1 этап
-        /*for (iPovtor = 0; iPovtor<1200; iPovtor++)
-        {*/
 
-        //gdemfas();
+        gdempriglashenia();
+        prinatpriglashenie();
 
-        zapolnitLoti(); //2 этап
-        nagatprodolgit();//3 этап
-        nagatSozatcenovoe();//4 этап
-        podpisatCenovoe();//5 этап
-        SikuliModalWidow();//добавить проверку в конце в друг цена поменялась
-        //SikuliJavaPwd();//добавить проверку в конце в друг цена поменялась
-        // убрал на тендере  proverkaNaitiPodpisat();//добавить проверку в конце в друг цена поменялась
-        SikuliPodpisatButton();//добавить проверку в конце в друг цена поменялась
-        SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
-        SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
-
-        //nagatotpravit();
+/*
+        podatcenovoe();
         pokazatskorostPodachi();//добавить проверку в конце в друг цена поменялась
-        Thread.sleep(5000);
+        Thread.sleep(5000);*/
+
+
       /*  zaitivzayavku();
         udalizayavku();
         pokazatskorosUdaleniya();
@@ -129,6 +121,40 @@ public class yavnoe_ogidanie {
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);
         }
+    }
+    private void podatcenovoe () throws Exception{
+        zapolnitLoti(); //2 этап
+        nagatprodolgit();//3 этап
+        nagatSozatcenovoe();//4 этап
+        podpisatCenovoe();//5 этап
+        SikuliModalWidow();//добавить проверку в конце в друг цена поменялась
+        //SikuliJavaPwd();//добавить проверку в конце в друг цена поменялась
+        // убрал на тендере  proverkaNaitiPodpisat();//добавить проверку в конце в друг цена поменялась
+        SikuliPodpisatButton();//добавить проверку в конце в друг цена поменялась
+        SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
+        SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
+        nagatotpravit();
+    }
+    private void gdempriglashenia() throws Exception{
+
+        while (!gdemelement(By.id("N20:NotPaused1:0")))
+        {
+            driver.get(baseUrl);
+            element = wait.until(presenceOfElementLocated(By.id("Draft")));
+            //Thread.sleep(500);
+        }
+    }
+    private void prinatpriglashenie() throws Exception{
+        driver.findElement(By.id("N20:NotPaused1:0")).click();
+        driver.findElement(By.id("GoBtnTop")).click();
+        nagatstroki();
+        pervzapol = true;
+        podatcenovoe();
+        pervzapol = false;
+        Thread.sleep(9000);
+    }
+    private void zapolnitlotpervraz() throws Exception{
+
     }
     private void gdemstart() throws InterruptedException{
         long sechas = 0;
@@ -304,25 +330,27 @@ public class yavnoe_ogidanie {
      }*/
     private void auth () throws Exception
     {
-        if (nomerpodayshego == 1) recetap(0);
+        //if (nomerpodayshego == 1) recetap(0);
         driver.manage().window().maximize();
         driver.navigate().to("https://tender.sk.kz/OA_HTML/AppsLocalLogin.jsp");
         element = wait.until(presenceOfElementLocated(By.id("passwordField")));
         element.sendKeys("123456");
         driver.findElement(By.id("SubmitButton")).click();
-        if  (nomerpodayshego == 1) gdemstart();
+     /*   if  (nomerpodayshego == 1) gdemstart();
         else if (nomerpodayshego == 2){
             gdempervogo();
             gdemizmeneniyaceni();
-        }
+        }*/
 
-        element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
+
+        element = wait.until(presenceOfElementLocated(By.id("Draft")));
         baseUrl = driver.getCurrentUrl();
         nachalotesta = System.currentTimeMillis();
-        element.click();
-        element = wait.until(presenceOfElementLocated(By.linkText("Строки")));
-        element.click();
-        if  (nomerpodayshego == 1) recetap(2);
+        /*element.click();
+        nagatstroki()*/
+
+
+        //if  (nomerpodayshego == 1) recetap(2);
 
     }
     private void nagatSozatcenovoe()
@@ -382,8 +410,6 @@ public class yavnoe_ogidanie {
     }
     private void zapolnitLoti()
     {
-
-
         ProverkaZashelvZapolnenie();
         recperem();
         // do
@@ -395,7 +421,6 @@ public class yavnoe_ogidanie {
             zapolnitLot(lot[i],i);
         }
         //}while (cenapomenyalas() != 0);
-
     }
     private void zapolnitLot(int lot, int ilot)
     {
@@ -419,7 +444,9 @@ public class yavnoe_ogidanie {
         //element.sendKeys  (Keys.CONTROL, "a");
         element.sendKeys(""+ keyCode);
         // long mycena = (long) (cenalota[ilot] * (1 - (procent[ilot] / 100)));
-        long mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
+        long mycena = 0;
+        if (pervzapol) mycena = (long)(cenalota[ilot] * 0.985);
+        else mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
 
             /* Random myRandom = new Random();
              int n = myRandom.nextInt(40);

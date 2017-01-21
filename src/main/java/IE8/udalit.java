@@ -27,7 +27,7 @@ public class udalit {
         driver = new InternetExplorerDriver();
         //baseUrl = "http://tender.sk.kz/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        nomerZayavki = "1129682";
+        nomerZayavki = "1147453";
     }
 
     @Test
