@@ -29,7 +29,7 @@ public class TimeSinhron {
 
     @Before
     public void setUp() throws Exception {
-        nomerZayavki = "1099408";
+        nomerZayavki = "1148360";
         driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         auth();
@@ -37,7 +37,7 @@ public class TimeSinhron {
 
     @Test
     public void SdelatSinhroVremeni() throws Exception {
-        Thread.sleep(2000);
+        Thread.sleep(30000);
         boolean probel = false;
         String ostalos =  driver.findElement(By.id("TimeLeft")).getText();
         String konec = driver.findElement(By.id("N")).getText();

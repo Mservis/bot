@@ -1,7 +1,7 @@
 package IE8;
-// это бот для главного подающего он ждет прилглашения затем , один раз подаеться заранее записанную цену и останавливаеться
+//
 //import java.util.regex.Pattern;
-
+// этот бот ждет приглашение потом принимает его и все
 //import HelperBasePakage.SikuliHelper;
 import com.mysql.fabric.jdbc.FabricMySQLDriver;
 import org.junit.After;
@@ -26,7 +26,7 @@ import java.util.Random;
 
 import static org.junit.Assert.fail;
 
-public class demping {
+public class demping_priglashenie {
     private WebDriver driver;
     private String baseUrl, nomerZayavki;
     private WebDriverWait wait;
@@ -50,7 +50,7 @@ public class demping {
     @Before
     public void setUp() throws Exception {
         //Гуцалов
-       // nomerZayavki = "1132305"; //номер заявки в которой учавствует
+        // nomerZayavki = "1132305"; //номер заявки в которой учавствует
         zakupka = 291452;//номер закупки
         dostarta = 65; //за сколько секунд до окончания нужно подать заявку
         nomerpodayshego = 1; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
@@ -91,20 +91,15 @@ public class demping {
     }
 
     @Test
-    public void go_demping() throws Exception {
+    public void gdat_priglashenia() throws Exception {
         nomercenovogo--;
         nachalovsegotesta = System.currentTimeMillis();
 
         auth(); //1 этап
-        recetap(0);
+
         gdempriglashenia();
         prinatpriglashenie();
-        nagatstroki();
-        podatcenovoe();
-        //Thread.sleep(5000);
-        gdemotpravilos();
-        recetap(1);
-        Thread.sleep(9000);
+        Thread.sleep(6000);
 
 /*
         podatcenovoe();
@@ -128,14 +123,6 @@ public class demping {
             fail(verificationErrorString);
         }
     }
-    private void gdemotpravilos() throws Exception{
-
-        while (!gdemelement(By.cssSelector("h1.x76")))
-        {
-            System.out.println("Жду когда отправиться.... ");
-        }
-        // driver.findElement(By.cssSelector("h1.x76")).click();
-    }
     private void podatcenovoe () throws Exception{
         zapolnitLoti(); //2 этап
         nagatprodolgit();//3 этап
@@ -153,17 +140,20 @@ public class demping {
 
         while (!gdemelement(By.id("N20:NotPaused1:0")))
         {
-           // driver.get(baseUrl);
+            //driver.get(baseUrl);
             driver.navigate().refresh();
             element = wait.until(presenceOfElementLocated(By.id("Draft")));
             //Thread.sleep(500);
         }
     }
     private void prinatpriglashenie() throws Exception{
+       /* driver.findElement(By.id("N20:NotPaused1:0")).click();
+        driver.findElement(By.id("GoBtnTop")).click();*/
         element = wait.until(presenceOfElementLocated(By.id("N20:NotPaused1:0")));
         element.click();
         element = wait.until(presenceOfElementLocated(By.id("GoBtnTop")));
         element.click();
+        Thread.sleep(10000);
     }
 
     private void gdemstart() throws InterruptedException{
@@ -381,7 +371,18 @@ public class demping {
 
     }
 
-     private int cenapomenyalas(){
+    /* private void zapolnitLoti()
+     {
+      double ponizitNa = 4.5; //процент на который понизиться заявка от 1 до 5
+      //убрать
+      Random myRandom = new Random();
+      int n = myRandom.nextInt(40);
+      ponizitNa = (new Double(n+10))/10;
+      //убрать
+      zapolnitLot(1, ponizitNa);
+      //zapolnitLot(2,  ponizitNa);
+     }*/
+    private int cenapomenyalas(){
         recperem();
         int variant = 0;
         for (int i = 0; i <lot.length; i++)
@@ -418,25 +419,47 @@ public class demping {
         for (int i =0;i<2;i++)// количество лотов
         {
             System.out.println("Заполняю лоты");
-           // zapolnitLot(lot[i],i);
+            // zapolnitLot(lot[i],i);
             zapolnitLot(i+1);
         }
-
+        //}while (cenapomenyalas() != 0);
     }
-
+    //private void zapolnitLot(int lot, int ilot)
     private void zapolnitLot(int lot)
     {
+        // заполняет поля
+       /* String myrez0 = driver.findElement(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr["+(1+lot)+"]/td[4]/span")).getText();
+        String str0 = "";
+        int i = 0;
+        for (i = 0; myrez0.charAt(i) != '.'; i++) {
+            if (myrez0.charAt(i) != ',') {
+                str0 += myrez0.charAt(i);
+            }
+        }
+        Double dbl0 = new Double(str0);
+        int int0 = (int) (dbl0 * (1 - (ponizitNa/100)));*/
 
+        // System.out.println("Цена поменялась");                 //span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[6]/input
         element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[6]/input")));
-
+        // element.click();
+        // element.sendKeys(Keys.CONTROL + "a");
         char keyCode = '\u0001'; // ctr + a
-
+        //element.sendKeys  (Keys.CONTROL, "a");
         element.sendKeys(""+ keyCode);
+        // long mycena = (long) (cenalota[ilot] * (1 - (procent[ilot] / 100)));
 
+        //long mycena = (long)(cenalota[ilot] * 0.985);
         long mycena =  0;
         if (lot == 1) mycena = 12113838;
         else mycena = 9085379;
 
+        //long mycena = 0;
+        // if (pervzapol) mycena = (long)(cenalota[ilot] * 0.985);
+        //  else mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
+
+            /* Random myRandom = new Random();
+             int n = myRandom.nextInt(40);
+             mycena += n;*/
 
         element.sendKeys("" + mycena);
         element.sendKeys(Keys.TAB);
@@ -454,8 +477,8 @@ public class demping {
             System.out.println("Моя цена для лота" + lot + "  " + mycena);
             System.out.println("Повтор лота" + lot + "  " + povtor);
             System.out.println("Количество лота" + lot + "  " + kolichestvo);
-           // System.out.println("Процент понижения   " + procent[ilot]);
-           // System.out.println("Коэфицент умножения   " + (1 - (procent[ilot] / 100)));
+            // System.out.println("Процент понижения   " + procent[ilot]);
+            // System.out.println("Коэфицент умножения   " + (1 - (procent[ilot] / 100)));
             povtor++;
             cenaStr = cenaStr / kolichestvo;
         }
@@ -664,7 +687,6 @@ public class demping {
     }
     private void nagatstroki()
     {
-
         element = wait.until(presenceOfElementLocated(By.linkText("Строки")));
         element.click();
     }

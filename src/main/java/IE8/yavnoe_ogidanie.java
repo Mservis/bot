@@ -49,9 +49,9 @@ public class yavnoe_ogidanie {
     @Before
     public void setUp() throws Exception {
         //Гуцалов
-        nomerZayavki = "1147453"; //номер заявки в которой учавствует
-        zakupka = 287921;//номер закупки
-        dostarta = 440000; //за сколько секунд до окончания нужно подать заявку
+        //nomerZayavki = "1147453"; //номер заявки в которой учавствует
+        zakupka = 291452;//номер закупки
+        dostarta = 65;//440000; //за сколько секунд до окончания нужно подать заявку
         nomerpodayshego = 1; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
         lot = new int[1];// количество лотов
         lot[0] = 1;//номер лота в заявке
@@ -111,7 +111,7 @@ public class yavnoe_ogidanie {
         SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
         SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
 
-        //nagatotpravit();
+        nagatotpravit();
         pokazatskorostPodachi();//добавить проверку в конце в друг цена поменялась
         Thread.sleep(5000);
       /*  zaitivzayavku();
@@ -316,7 +316,9 @@ public class yavnoe_ogidanie {
             gdemizmeneniyaceni();
         }
 
-        element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
+
+        element = wait.until(presenceOfElementLocated(By.id("N11:DraftBid:0"))); // element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
+
         baseUrl = driver.getCurrentUrl();
         nachalotesta = System.currentTimeMillis();
         element.click();
@@ -400,30 +402,10 @@ public class yavnoe_ogidanie {
     private void zapolnitLot(int lot, int ilot)
     {
         // заполняет поля
-       /* String myrez0 = driver.findElement(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr["+(1+lot)+"]/td[4]/span")).getText();
-        String str0 = "";
-        int i = 0;
-        for (i = 0; myrez0.charAt(i) != '.'; i++) {
-            if (myrez0.charAt(i) != ',') {
-                str0 += myrez0.charAt(i);
-            }
-        }
-        Double dbl0 = new Double(str0);
-        int int0 = (int) (dbl0 * (1 - (ponizitNa/100)));*/
-
-        // System.out.println("Цена поменялась");                 //span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[6]/input
         element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[6]/input")));
-        // element.click();
-        // element.sendKeys(Keys.CONTROL + "a");
         char keyCode = '\u0001'; // ctr + a
-        //element.sendKeys  (Keys.CONTROL, "a");
         element.sendKeys(""+ keyCode);
-        // long mycena = (long) (cenalota[ilot] * (1 - (procent[ilot] / 100)));
         long mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
-
-            /* Random myRandom = new Random();
-             int n = myRandom.nextInt(40);
-             mycena += n;*/
 
         element.sendKeys("" + mycena);
         element.sendKeys(Keys.TAB);
@@ -645,7 +627,7 @@ public class yavnoe_ogidanie {
     private void zaitivzayavku()
     {
         driver.get(baseUrl);
-        element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
+        element = wait.until(presenceOfElementLocated(By.id("N11:DraftBid:0")));// element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+nomerZayavki+"')]")));
         baseUrl = driver.getCurrentUrl();
         element.click();
     }
