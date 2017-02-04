@@ -46,7 +46,7 @@ public class demping_bot {
     private Connection connection;
     private PreparedStatement preparedStatement;
     private Statement statement;
-    private long [] cenalota, staryacenalota, cenaPoday;
+    private double [] cenalota, staryacenalota, cenaPoday;
     private int [] lot;
     private float[] procent, skidka, nextprocent;
     private boolean gdatIzmeneniaCeniNaStarte, gdatPriglashenya, povtornoPodovat,ponastoyashemu;
@@ -67,12 +67,12 @@ public class demping_bot {
         /*lot[2] = 3;//номер лота в заявке
         lot[3] = 4;//номер лота в заявке*/
         nomercenovogo = 1; //каким номером по счету будет в ценовое предложене в общем списке с пркикрипленными файлами.
-        cenalota = new long[vsegolotov];
-        cenaPoday = new long[vsegolotov];
+        cenalota = new double[vsegolotov];
+        cenaPoday = new double[vsegolotov];
         procent = new float[vsegolotov];
         nextprocent = new float[vsegolotov];
         skidka = new float[vsegolotov];
-        staryacenalota = new long[vsegolotov];
+        staryacenalota = new double[vsegolotov];
         driver = new InternetExplorerDriver();
         wait = new WebDriverWait(driver, 30000);
         okwindow = new Region(91,49,95,36);
@@ -172,7 +172,7 @@ public class demping_bot {
             PreparedStatement preparedStatement = null;
             try {
                 preparedStatement = connection.prepareStatement(Allrec);
-                preparedStatement.setLong(1, cenaPoday[i]);
+                preparedStatement.setDouble(1, cenaPoday[i]);
                 preparedStatement.execute();
                 //connection.close();
             } catch (SQLException e) {
@@ -306,7 +306,7 @@ public class demping_bot {
                 System.out.println("Сделал запрос");
                 while (resultSet.next()) {
                     System.out.println("Читаю значения");
-                    cenalota[i] =  resultSet.getLong("cena");
+                    cenalota[i] =  resultSet.getDouble("cena");
                     System.out.println("Прочитал цену");
                     procent[i] = resultSet.getFloat("procent");
                     System.out.println("Прочитал процент");
@@ -709,14 +709,14 @@ public class demping_bot {
     }
     private boolean cenaNeproshla(){
         if (ponastoyashemu) return true;
-        long cenaisbazy = 0; float procenttest = 0; float nextprocenttest;
+        double cenaisbazy = 0; float procenttest = 0; float nextprocenttest;
         try {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka + " AND lot = " + 1);
             System.out.println("Сделал запрос");
             while (resultSet.next()) {
                 System.out.println("Читаю значения");
-                cenaisbazy =  resultSet.getLong("cena");
+                cenaisbazy =  resultSet.getDouble("cena");
                 System.out.println("Прочитал цену");
                 procenttest = resultSet.getFloat("procent");
                 System.out.println("Прочитал процент");

@@ -43,11 +43,11 @@ public class timeControlAllLots {
     private int []lot;
     private int []shag;
     private int vsegolotov;
-    private long []StarayaCena;
+    private double []StarayaCena;
     private long zakupka;
     private Connection connection;
     private Region okwindow;
-    private long []onlinecena;
+    private double []onlinecena;
     private Date date; private boolean ponastoyashemu;
     private int poryadkovinomercenovogo;
     private Pattern ok2,inputPass,ok3,gotovotpravit,podpisat, input2, ok4, otpravit, otpravil, pwdOk, pustoijava, gotovpodpisat, postavshik;
@@ -63,9 +63,9 @@ public class timeControlAllLots {
         lot[1]=2;
         /*lot[2]=3;
         lot[3]=4;*/
-        StarayaCena = new long[vsegolotov];
+        StarayaCena = new double[vsegolotov];
         shag = new int[vsegolotov];
-        onlinecena = new long[vsegolotov];
+        onlinecena = new double[vsegolotov];
 
         driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -189,7 +189,7 @@ public class timeControlAllLots {
             ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka);
             while (resultSet.next()) {
                 int templot = resultSet.getInt("lot");
-                long cenalota = resultSet.getLong("cena");
+                double cenalota = resultSet.getDouble("cena");
                 for (int ilot = 0; ilot< vsegolotov; ilot++)
                 {
                     if (lot[ilot] == templot) {
@@ -229,12 +229,13 @@ public class timeControlAllLots {
             String myrez0 = element.getText();
             String str = "";
             int i = 0;
-            for (i = 0; myrez0.charAt(i) != '.'; i++) {
+            for (i = 0; myrez0.charAt(i) != ' '; i++) {
                 if (myrez0.charAt(i) != ',') {
                     str += myrez0.charAt(i);
                 }
             }
-            onlinecena[ilot] =  Integer.parseInt(str);
+
+            onlinecena[ilot] =  Double.parseDouble(str);
 
         } catch (NoSuchElementException e) {
 
@@ -258,7 +259,7 @@ public class timeControlAllLots {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka+ " AND lot = "+lot[ilot]);
             while (resultSet.next()) {
-                onlinecena[ilot] = resultSet.getLong("cenavirtual");
+                onlinecena[ilot] = resultSet.getDouble("cenavirtual");
                 System.out.println("Вирутальная цена = "+onlinecena[ilot]);
             }
             //System.out.println("Резульат 2"+ resultSet.getString(2));
@@ -317,7 +318,7 @@ public class timeControlAllLots {
             PreparedStatement preparedStatement = null;
             try {
                 preparedStatement = connection.prepareStatement(Allrec);
-                preparedStatement.setLong(1, onlinecena[i]);
+                preparedStatement.setDouble(1, onlinecena[i]);
                 long vrem = date.getTime();
                 java.sql.Time sqlTime = new java.sql.Time(vrem);
                 preparedStatement.setTime(2, sqlTime);

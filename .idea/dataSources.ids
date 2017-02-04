@@ -50,11 +50,11 @@
       <column id="14" parent="3" name="procent">
         <data-type>float</data-type>
       </column>
-      <column id="15" parent="3" name="glavni">
-        <data-type>int(1)</data-type>
+      <column id="15" parent="3" name="startcena">
+        <data-type>double</data-type>
       </column>
       <column id="16" parent="3" name="cena">
-        <data-type>int(11)</data-type>
+        <data-type>double</data-type>
       </column>
       <column id="17" parent="3" name="skidka">
         <data-type>float</data-type>
@@ -62,7 +62,13 @@
       <column id="18" parent="3" name="etap">
         <data-type>int(2)</data-type>
       </column>
-      <key id="19" parent="3" name="PRIMARY">
+      <column id="19" parent="3" name="nextprocent">
+        <data-type>float</data-type>
+      </column>
+      <column id="20" parent="3" name="cenavirtual">
+        <data-type>double</data-type>
+      </column>
+      <key id="21" parent="3" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

@@ -60,82 +60,20 @@ public class chernovik {
 
     @Test
     public void chernoviK() throws Exception {
-        for (int i = 0; i<20;i++) {
-            System.out.println(System.currentTimeMillis() + "");
-            //Thread.sleep(1000);
+
+        //double onlinecena =  Double.parseDouble(str);
+
+        String myrez0 = "195.22 - 217.72";
+        String str = "";
+        int i = 0;
+        for (i = 0; myrez0.charAt(i) != ' '; i++) {
+            if (myrez0.charAt(i) != ',') {
+                str += myrez0.charAt(i);
+            }
         }
 
-        // funkcia();
-      /* Connection connection;
-        Driver driver2 = new FabricMySQLDriver();
-        DriverManager.registerDriver(driver2);
-        Statement statement;
-        connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");*/
-       long sechas = 0;
-        long nachalo = 0;
-        do {
-            try {
-
-                //connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
-                statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + 286023 + " AND lot = " + 1);
-                while (resultSet.next()) {
-                    Time timeend = resultSet.getTime("timeend");
-                    nachalo = ((timeend.getHours() * 60 + timeend.getMinutes()) * 60 + timeend.getSeconds()-dostarta);
-                    Date date = new Date();
-                    sechas = ((date.getHours() * 60 + date.getMinutes()) * 60 + date.getSeconds());
-                    }
-            } catch (SQLException e) {
-                System.err.println("Не удлаось подключиться к драйверу базы данных");
-            }
-            System.out.println("Осталось " +(nachalo - sechas));
-            Thread.sleep(500);
-        } while (nachalo > sechas);
-        System.out.println("Старт ");
-        //sikulihelper.javaPWD();
-       /* driver.manage().window().maximize();
-        driver.navigate().to("https://tender.sk.kz/OA_HTML/AppsLocalLogin.jsp");
-        element = wait.until(presenceOfElementLocated(By.id("passwordField")));
-        element.sendKeys("123456");
-        driver.findElement(By.id("SubmitButton")).click();
-        element = wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'"+1106614+"')]")));
-        baseUrl = driver.getCurrentUrl();
-        element.click();
-        //element = wait.until(presenceOfElementLocated(By.linkText("Строки")));
-        //element.click();
-        element = wait.until(presenceOfElementLocated(By.xpath("//a[@id='FileListRNEx:SignItem:" + (2-1) + "']/img")));
-        element.click();// подписать
-        okwindow.setRect(754, 485, 115, 73);
-        okwindow.wait(ok2, 10000);
-        okwindow.click(ok2);
-        okwindow.setRect(618, 433, 271, 82);
-        Pattern inputPass = new Pattern("c:\\forsikuli\\ie8\\pass.png");
-
-        okwindow.wait(inputPass, 20000);
-        boolean viguPWD = false;
-        do {
-            okwindow.type("123456");
-            okwindow.type("a", KeyModifier.CTRL);
-
-            try {
-                okwindow.find(ok2);
-                viguPWD = true;
-            } catch (FindFailed e) {
-                viguPWD = false;
-            }
-        }while (viguPWD);
-       //okwindow.type(Key.HOME);
-        //okwindow.type(Key.END + KeyModifier.SHIFT);
-       // okwindow.type(inputPass, Key.END, KeyModifier.SHIFT);
-        int k = NavigatorHelper.sum(5,5);
-        NavigatorHelper.auth(1,4);
-
-        Thread.sleep(10000);
-        int nomer = 2;
-        System.out.println("//a[@id='FileListRNEx:SignItem:1']/img");
-        System.out.println("//a[@id='FileListRNEx:SignItem:" + (nomer -1) + "']/img");*/
-      // NavigatorHelper navigator = new NavigatorHelper();
-       //navigator.auth();
+        double onlinecena =  Double.parseDouble(str);
+        System.out.println(onlinecena);
     }
 
     @After
