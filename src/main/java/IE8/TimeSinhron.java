@@ -29,7 +29,7 @@ public class TimeSinhron {
 
     @Before
     public void setUp() throws Exception {
-        nomerZayavki = "1148360";
+        nomerZayavki = "1165327";
         driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         auth();
