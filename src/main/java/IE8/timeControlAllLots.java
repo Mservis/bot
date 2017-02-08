@@ -2,6 +2,8 @@ package IE8;
 
 //import java.util.regex.Pattern;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.*;
 import java.sql.Time;
 import java.text.SimpleDateFormat;
@@ -38,12 +40,9 @@ public class timeControlAllLots {
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
-    private String nomerZayavki, BaseUrl;
-    private float[] procentPonigeniya;
+    // private String nomerZayavki, BaseUrl;
     private int []lot;
-    private int []shag;
     private int vsegolotov;
-    private double []StarayaCena;
     private long zakupka;
     private Connection connection;
     private Region okwindow;
@@ -55,18 +54,15 @@ public class timeControlAllLots {
     public void setUp() throws Exception {
         // nastroiki
         ponastoyashemu = true;
-        zakupka = 294525;
+        zakupka = 295579;
         poryadkovinomercenovogo = 1; //ценовое которое нажметься на старте бывает что оно вторым оказываетья
-        vsegolotov = 2;
+        vsegolotov = 1;
         lot = new int[vsegolotov];
         lot[0]=1;
-        lot[1]=2;
-        /*lot[2]=3;
+        /*lot[1]=2;
+        lot[2]=3;
         lot[3]=4;*/
-        StarayaCena = new double[vsegolotov];
-        shag = new int[vsegolotov];
         onlinecena = new double[vsegolotov];
-
         driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         ok2 = new Pattern("c:\\forsikuli\\ie8\\ok.png");
@@ -75,68 +71,27 @@ public class timeControlAllLots {
         wait = new WebDriverWait(driver, 30000);
         connection = DriverManager.getConnection("jdbc:mysql://192.168.1.12:3306/mydbtest", "root", "root");
         date = new Date();
-        procentPonigeniya = new float[19];
         //float korekciya = 0.000001f;
-        float korekciya = 0.004f;
-        procentPonigeniya[0] = 0.95f + korekciya;
-        procentPonigeniya[1] = 0.947368f + korekciya;
-        procentPonigeniya[2] = 0.944444f + korekciya;
-        procentPonigeniya[3] = 0.941176f + korekciya;
-        procentPonigeniya[4] = 0.9375f + korekciya;
-        procentPonigeniya[5] = 0.933333f + korekciya;
-        procentPonigeniya[6] = 0.928571f + korekciya;
-        procentPonigeniya[7] = 0.923077f + korekciya;
-        procentPonigeniya[8] = 0.916667f + korekciya;
-        procentPonigeniya[9] = 0.909091f + korekciya;
-        procentPonigeniya[10] = 0.9f + korekciya;
-        procentPonigeniya[11] = 0.888889f + korekciya;
-        procentPonigeniya[12] = 0.875f + korekciya;
-        procentPonigeniya[13] = 0.857143f + korekciya;
-        procentPonigeniya[14] = 0.833333f + korekciya;
-        procentPonigeniya[15] = 0.8f + korekciya;
-        procentPonigeniya[16] = 0.75f + korekciya;
-        procentPonigeniya[17] = 0.666667f + korekciya;
-        procentPonigeniya[18] = 0.5f + korekciya;
 
     }
 
     @Test
     public void slediZaVremenem() throws Exception {
-        recperemStarayaCena();
-        for (int ilot=0;ilot<vsegolotov;ilot++)
-        {
-            shag[ilot]=0;
-            onlinecena[ilot]=StarayaCena[ilot];
-            recShag(shag[ilot],lot[ilot]);
-            System.out.println("Онлай цена  для лота №" + lot[ilot] + " = " + onlinecena[ilot]);
-            System.out.println("Старая цена для лота №" + lot[ilot] + " = " + StarayaCena[ilot]);
-            System.out.println("Шаг для лота №" + lot[ilot] + " = " + shag[ilot]);
-            System.out.println("Процент понижения для лота №" + lot[ilot] + " = " + procentPonigeniya[shag[ilot]]);
-            System.out.println("Сдедующий процент понижения для лота №" + lot[ilot] + " = " + procentPonigeniya[shag[ilot]+1]);
-        }
         auth();
-        int pause = 0;
-        while (pause == 0) {
-            if (ponastoyashemu)chatatvremyaend();
+        int beskonechnipovtor = 0;
+        while (beskonechnipovtor == 0) {
+            if (ponastoyashemu)
+            {
+                System.out.println("Читаю время");
+                chatatvremyaend();
+            }
             for (int ilot=0;ilot<vsegolotov;ilot++)
             {
-                if (ponastoyashemu)chitatcenu(ilot);
-                else chitavirtualtcenu(ilot);
-                if (onlinecena[ilot] != StarayaCena[ilot]){
-                    StarayaCena[ilot] = onlinecena[ilot];
-                    shag[ilot]++;
-                    System.out.println("Онлай цена " + lot[ilot] + " = "+onlinecena[ilot]);
-                    System.out.println("Старая цена " + lot[ilot] + " = "+StarayaCena[ilot]);
-                    System.out.println("Шаг " + lot[ilot] + " = " + shag[ilot]);
-                    System.out.println("Процент понижения " + lot[ilot] + " = " + procentPonigeniya[shag[ilot]]);
-                    System.out.println("Сдедующий процент понижения " + lot[ilot] + " = " + procentPonigeniya[shag[ilot]+1]);
-                }
-
-
+                chitatcenu(ilot);
                 if (ponastoyashemu)System.out.println("Время завершения = "+ date.getTime());
             }
             allrec();
-            pause = 0;
+            beskonechnipovtor = 0;
             Thread.sleep(500);
             if(ponastoyashemu)driver.findElement(By.id("intervalButton")).click();
         }
@@ -166,48 +121,8 @@ public class timeControlAllLots {
             fail(verificationErrorString);
         }
     }
-    private void recShag(int nshag, int nlot){
-        String recShag = "update setup set shag = ?, procent = ?, nextprocent = ? where nomerzakupki =" + zakupka + " AND lot = "+nlot;
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement =  connection.prepareStatement(recShag);
-            preparedStatement.setInt(1,nshag);
-            preparedStatement.setFloat(2,procentPonigeniya[nshag]);
-            preparedStatement.setFloat(3,procentPonigeniya[nshag+1]);
-            preparedStatement.execute();
-            //connection.close();
-        } catch (SQLException e) {
-            System.err.println("Не удлаось подключиться к драйверу базы данных");
-        }
-        System.out.println("Записал шаг");
-    }
-    private void recperemStarayaCena(){
-        //for (int i = 0; i<vsegolotov;i++) {
-        try {
-            //System.out.println("Заход "+i);
-            statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka);
-            while (resultSet.next()) {
-                int templot = resultSet.getInt("lot");
-                double cenalota = resultSet.getDouble("cena");
-                for (int ilot = 0; ilot< vsegolotov; ilot++)
-                {
-                    if (lot[ilot] == templot) {
-                        StarayaCena[ilot] = cenalota;
-                        System.out.println("Прочитал цену для лота №" + templot + " = " + StarayaCena[ilot]);
-                    }
-                }
-                //StarayaCena[resultSet.getInt("lot")-1] =  resultSet.getLong("cena");
-                //
-            }
-            //System.out.println("Резульат 2"+ resultSet.getString(2));
-            //connection.close();
-        } catch (SQLException e) {
-            System.err.println("Не удлаось подключиться к драйверу базы данных");
-        }
 
-        //}
-    }
+
     private void SikuliModalWidow() throws Exception {
         System.out.println("sikulimodal");
         okwindow.setRect(754, 485, 115, 73);
@@ -223,20 +138,27 @@ public class timeControlAllLots {
         // String myrez0 = driver.findElement(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")).getText();
         //element = wait.until(presenceOfElementLocated(By.id("N70:BEST_BID_PRICE:0")));
         // 2 это первая строка, 3 вторая и т.д.
-        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[" + (2+ilot) + "]/td[6]/span")));
+        if (ponastoyashemu) element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[" + (2+ilot) + "]/td[6]/span")));
         //убрал String myrez0 = driver.findElement(By.xpath("//span[@id='itemTable']/table[2]/tbody/tr[2]/td[6]/span")).getText();
         try {
-            String myrez0 = element.getText();
+            String cena = "";
+            if (ponastoyashemu) {
+                cena = element.getText();
+                System.out.println(cena);}
+            else {
+                chitavirtualtcenu(ilot);
+                double maxcena = onlinecena[ilot]*1.05;
+                System.out.println("Максимальная цена без округления для лота "+ ilot +" = " + maxcena);
+                double okruglenmaxcena = new BigDecimal(maxcena).setScale(2, RoundingMode.UP).doubleValue();
+                cena  = "" + onlinecena[ilot] + " - "+ okruglenmaxcena;
+            }
+            System.out.println("Диапазон цен для лота " + ilot + " = " + cena);
             String str = "";
             int i = 0;
-            for (i = 0; myrez0.charAt(i) != ' '; i++) {
-                if (myrez0.charAt(i) != ',') {
-                    str += myrez0.charAt(i);
-                }
+            for (i = 0; i < cena.length(); i++) {
+                if (cena.charAt(i) != ',') str += cena.charAt(i);
             }
-
             onlinecena[ilot] =  Double.parseDouble(str);
-
         } catch (NoSuchElementException e) {
 
         } catch (UnhandledAlertException e) {
@@ -260,7 +182,7 @@ public class timeControlAllLots {
             ResultSet resultSet = statement.executeQuery("select * from setup where nomerzakupki =" + zakupka+ " AND lot = "+lot[ilot]);
             while (resultSet.next()) {
                 onlinecena[ilot] = resultSet.getDouble("cenavirtual");
-                System.out.println("Вирутальная цена = "+onlinecena[ilot]);
+                System.out.println("Вирутальная цена для лота "+ ilot +" = "+onlinecena[ilot]);
             }
             //System.out.println("Резульат 2"+ resultSet.getString(2));
             //connection.close();
@@ -297,6 +219,7 @@ public class timeControlAllLots {
             date.setHours(Integer.parseInt(hourstr));
             date.setMinutes(Integer.parseInt(minstr));
             date.setSeconds(0);
+            System.out.println("Прочитал время");
 
         } catch (NoSuchElementException e) {
 
@@ -314,7 +237,7 @@ public class timeControlAllLots {
         // int etap = 0;
         for (int i = 0; i < vsegolotov;i++) {
             //recShag(shag[i],lot[i]);
-            String Allrec = "update setup set cena = ?, timeend = ?,shag = ?, procent = ?, nextprocent = ? where nomerzakupki =" + zakupka + " AND lot = "+lot[i];
+            String Allrec = "update setup set cena = ?, timeend = ? where nomerzakupki =" + zakupka + " AND lot = "+lot[i];
             PreparedStatement preparedStatement = null;
             try {
                 preparedStatement = connection.prepareStatement(Allrec);
@@ -322,9 +245,6 @@ public class timeControlAllLots {
                 long vrem = date.getTime();
                 java.sql.Time sqlTime = new java.sql.Time(vrem);
                 preparedStatement.setTime(2, sqlTime);
-                preparedStatement.setInt(3,shag[i]);
-                preparedStatement.setFloat(4,procentPonigeniya[shag[i]]);
-                preparedStatement.setFloat(5,procentPonigeniya[shag[i]+1]);
                 preparedStatement.execute();
                 //connection.close();
             } catch (SQLException e) {
@@ -334,7 +254,7 @@ public class timeControlAllLots {
         }
     }
     private void chitatvremia()throws Exception{
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         boolean probel = false;
         String ostalos =  driver.findElement(By.id("TimeLeft")).getText();
         String konec = driver.findElement(By.id("N")).getText();
