@@ -42,25 +42,29 @@ public class demping_bot {
     private int nomercenovogo, dostarta, nomerpodayshego, iPovtor, vsegolotov;
     private Region okwindow;
     private Pattern ok2,inputPass,ok3,gotovotpravit,podpisat, input2, ok4, otpravit, otpravil, pwdOk, pustoijava, gotovpodpisat, postavshik;
-    private long zakupka;
+    private long zakupka, progrevochnayaZayavka;
     private Driver DBdriver;
     private Connection connection;
     private PreparedStatement preparedStatement;
     private Statement statement;
     private double [] cenalota, staryacenalota, cenaPoday, startcena;
     private int [] lot;
-    private float[] procent, skidka, nextprocent;
-    private boolean gdatIzmeneniaCeniNaStarte, gdatPriglashenya, povtornoPodovat,ponastoyashemu;
+    private float[] procent, skidka;
+    private boolean gdatIzmeneniaCeniNaStarte, gdatPriglashenya, povtornoPodovat,ponastoyashemu, progrev, otpravlyat;
     @Before
     public void setUp() throws Exception {
         //nastroiki
-        zakupka = 295579;// zakupka = 291452;//номер закупки
+        zakupka = 295562;// zakupka = 291452;//номер закупки
         nomerpodayshego = 0; // каким буде
         // т этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
         gdatPriglashenya = true;
         gdatIzmeneniaCeniNaStarte = false;
         povtornoPodovat = false;
         ponastoyashemu = true;
+        otpravlyat = false;
+        progrev = true;
+        progrevochnayaZayavka = 1166116;
+        procentponigeniya = 0.049;
         vsegolotov = 1;
         lot = new int[vsegolotov];// количество лотов
         lot[0] = 1;//номер лота в заявке
@@ -68,11 +72,9 @@ public class demping_bot {
         lot[2] = 3;//номер лота в заявке
         lot[3] = 4;//номер лота в заявке*/
         nomercenovogo = 1; //каким номером по счету будет в ценовое предложене в общем списке с пркикрипленными файлами.
-        procentponigeniya = 0.01;
         cenalota = new double[vsegolotov];
         cenaPoday = new double[vsegolotov];
         procent = new float[vsegolotov];
-        nextprocent = new float[vsegolotov];
         skidka = new float[vsegolotov];
         staryacenalota = new double[vsegolotov];
         startcena = new double[vsegolotov];
@@ -113,6 +115,7 @@ public class demping_bot {
 
         for (int is = 0; is <1000; is++) {
             gdemCancelBtn();
+            zapustitSPiona(1);
             nagatstroki();
             podatcenovoe();
             //Thread.sleep(12000);
@@ -166,9 +169,11 @@ public class demping_bot {
             SikuliPodpisatButton();//добавить проверку в конце в друг цена поменялась
             SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
             SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
-            nagatotpravit();
+            if (otpravlyat)nagatotpravit();
+            else   udalizayavku();
         }
     }
+
     private void recvirtualceny(){
         for (int i = 0; i < vsegolotov;i++) {
             //recShag(shag[i],lot[i]);
@@ -185,14 +190,17 @@ public class demping_bot {
             }
         }
     }
+
     private void gdempriglashenia() throws Exception{
 
         while (!gdemelement(By.id("N20:NotPaused1:0")))
         {
             // driver.get(baseUrl);
             //driver.navigate().refresh();
+            while (!gdemelement(By.id("PON_SOURCING_SUPPLIER")));// подождать когда страница догрузиться
             element = wait.until(presenceOfElementLocated(By.id("PON_SOURCING_SUPPLIER")));
             element.click();
+            while (!gdemelement(By.id("Draft")));
             element = wait.until(presenceOfElementLocated(By.id("Draft")));
             //Thread.sleep(500);
         }
@@ -316,7 +324,6 @@ public class demping_bot {
                     System.out.println("Прочитал цену");
                     procent[i] = resultSet.getFloat("procent");
                     System.out.println("Прочитал процент");
-                    nextprocent[i] = resultSet.getFloat("nextprocent");
                     System.out.println("Прочитал следующий процент");
                     skidka[i] = resultSet.getFloat("skidka");
                     System.out.println("Прочитал скидку");
@@ -344,6 +351,20 @@ public class demping_bot {
             System.err.println("Не удлаось подключиться к драйверу базы данных");
         }
         System.out.println("Записал этап");
+    }
+    private void zapustitSPiona(int daNet){
+        System.out.println("Запускаю шпиона");
+        String recetap = "update setup set zapustitspiona = ? where nomerzakupki =" + zakupka + " AND lot = 1";
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement =  connection.prepareStatement(recetap);
+            preparedStatement.setInt(1,daNet);
+            preparedStatement.execute();
+            //connection.close();
+        } catch (SQLException e) {
+            System.err.println("Не удлаось подключиться к драйверу базы данных");
+        }
+        System.out.println("Шпион запущен");
     }
 
     private void udalilOk(){
@@ -419,11 +440,18 @@ public class demping_bot {
     private void auth () throws Exception
     {
         //if (nomerpodayshego == 1) recetap(0);
+        if (nomerpodayshego == 0) {
+            zapustitSPiona(0);
+            recetap(0);
+        }
         driver.manage().window().maximize();
         driver.navigate().to("https://tender.sk.kz/OA_HTML/AppsLocalLogin.jsp");
         element = wait.until(presenceOfElementLocated(By.id("passwordField")));
         element.sendKeys("123456");
         driver.findElement(By.id("SubmitButton")).click();
+        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='RespResultTable']/table[2]/tbody/tr[2]/td[3]/a")));
+        baseUrl = driver.getCurrentUrl();
+        if (progrev)progrevBot();
         if (gdatPriglashenya)
         {
             gdempriglashenia();
@@ -431,11 +459,9 @@ public class demping_bot {
         }
         else {
             element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='RespResultTable']/table[2]/tbody/tr[2]/td[3]/a")));
-            baseUrl = driver.getCurrentUrl();
             nachalotesta = System.currentTimeMillis();
             element.click();
         }
-        if (nomerpodayshego == 0) recetap(0);
 
         element = wait.until(presenceOfElementLocated(By.id("GoBtnTop")));
         element.click();
@@ -450,6 +476,38 @@ public class demping_bot {
     {
         driver.findElement(By.xpath("//table[@id='PageButtons']/tbody/tr/td[10]/button")).click(); //создать ценовое
         System.out.println("Нажал создать ценовое");
+    }
+    private void progrevBot() throws Exception{
+
+        element = wait.until(presenceOfElementLocated(By.linkText(""+ progrevochnayaZayavka)));
+        element.click();
+        nagatstroki();
+        zapolnitProgrevLot();
+        progrevNagatprodolgit();
+        nagatSozatcenovoe();//4 этап
+        nomercenovogo++;
+        podpisatCenovoe();//5 этап
+        nomercenovogo--;
+        System.out.println("Нажал подписать ценовое");
+        SikuliModalWidow();//добавить проверку в конце в друг цена поменялась
+        System.out.println("Модальное окно обработал");
+        progrevSikuliPodpisatButton();
+        System.out.println("Нажал подписать");
+        SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
+        System.out.println("Вогнал пароль");
+        progrevSikuliJavaOtpravitButton();//д
+        System.out.println("Проверил что отправилось");
+        element = wait.until(presenceOfElementLocated(By.xpath("//a[@id='FileListRNEx:DeleteItem:1']/img")));
+        System.out.println("Нашел удалить");
+        element.click();
+        System.out.println("Нажал удалить");
+        //pokazatskorostPodachi();
+        Region okwin = new Region(749,479,100,49);
+        okwin.click(ok2);//jjj*/
+        System.out.println("Обработал модальное окно");
+        udalilOk();
+        driver.get(baseUrl);
+
     }
     private void podpisatCenovoe()
     {
@@ -500,20 +558,28 @@ public class demping_bot {
         // do
         //{
         System.out.println("Переменные записанны");
-        for (int i =0;i<lot.length;i++)
+
+        for (int i = 0; i < lot.length; i++)
         //for (int i =0;i<2;i++)// количество лотов
         {
             System.out.println("Заполняю лоты");
-            if (ponastoyashemu)zapolnitLotPoFormule(lot[i],i);
-            else zapolnitVirtualLot(lot[i],i);
+            if (ponastoyashemu) zapolnitLotPoFormule(lot[i], i);
+            else zapolnitVirtualLot(lot[i], i);
         }
         gdatIzmeneniaCeniNaStarte = true;
+
     }
     private void zapolnitVirtualLot(int lot, int ilot)
     {
+        System.out.println("Заполняю виртуальные лоты");
+        System.out.println("startcena[ilot] = " + startcena[ilot]);
+        System.out.println("cenalota[ilot] = " + cenalota[ilot]);
+        System.out.println("procentponigeniya = " + procentponigeniya);
         double mycena =  startcena[ilot]*((cenalota[ilot]/startcena[ilot]) - procentponigeniya);
+        System.out.println("mycena = " + mycena);
         if (gdatIzmeneniaCeniNaStarte) mycena = startcena[ilot]*((mycena/startcena[ilot]) - procentponigeniya);
         cenaPoday[ilot] =  new BigDecimal(mycena).setScale(2, RoundingMode.UP).doubleValue();
+        System.out.println("Cena poday = " + cenaPoday[ilot]);
         mycena = cenaPoday[ilot];
         String mycenaSzapitoy = String.format("%.2f", mycena);
         String mycenaStochkoi = "";
@@ -524,17 +590,15 @@ public class demping_bot {
         element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td["+(6-1)+"]/input")));
         char keyCode = '\u0001';
         element.sendKeys(""+ keyCode);
+        System.out.println("mycenaStrochkoi = " + mycenaStochkoi);
         element.sendKeys(mycenaStochkoi);
         element.sendKeys(Keys.TAB);
-        System.out.println("Цену подал");
-        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td["+(9-2)+"]/span")));
-        String kolichStr = "";
+        System.out.println("Виртулальну цену подал");
+        long kolichestvo = 0;
         do {
-            element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[9]/span")));
-            kolichStr = element.getText();// количесво 1
-            System.out.println("kolichStr = " + kolichStr);
-        } while (kolichStr == "");
-        int kolichestvo = Integer.parseInt(kolichStr);
+            kolichestvo = prochitatKolichestvo(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[7]/span"));
+        } while (kolichestvo == 0);
+
         System.out.println("int kolichestvo = " + kolichestvo);
         int povtor = 0;
         double cenaStr = 0;
@@ -579,17 +643,16 @@ public class demping_bot {
         element.sendKeys(mycenaStochkoi);
         element.sendKeys(Keys.TAB);
         System.out.println("Цену подал");
-        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td["+(9)+"]/span")));
-        String kolichStr = "";
+        long kolichestvo = 0;
         do {
-            element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[9]/span")));
-            kolichStr = element.getText();// количесво 1
-            System.out.println("kolichStr = " + kolichStr);
-        } while (kolichStr == "");
-        int kolichestvo = Integer.parseInt(kolichStr);
+            //element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[9]/span")));
+            kolichestvo = prochitatKolichestvo(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[9]/span"));
+        } while (kolichestvo == 0);
+
         System.out.println("int kolichestvo = " + kolichestvo);
         int povtor = 0;
         double cenaStr = 0;
+        double cenastrOkrugl = 0;
         do {
             do {
                 cenaStr = ProchitatCeny(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td["+(10)+"]/span"));//общая цена
@@ -598,89 +661,65 @@ public class demping_bot {
             } while (cenaStr == 0);
             //"Строка2   "
             System.out.println("Моя цена для лота" + lot + "  " + mycena);
+            System.out.println("Цена стр = " + lot + "  " + cenaStr);
+            cenastrOkrugl = new BigDecimal(mycena * kolichestvo).setScale(2, RoundingMode.HALF_UP).doubleValue();
+            System.out.println("Моя цена х количество = " + lot + "  " + cenastrOkrugl);
             System.out.println("Повтор лота" + lot + "  " + povtor);
             System.out.println("Количество лота" + lot + "  " + kolichestvo);
             // System.out.println("Процент понижения   " + procent[ilot]);
             // System.out.println("Коэфицент умножения   " + (1 - (procent[ilot] / 100)));
             povtor++;
-            cenaStr = cenaStr / kolichestvo;
+
         }
-        while (mycena != cenaStr);
+        while (cenastrOkrugl != cenaStr);
     }
 
-    private void zapolnitLotIzStroki(int lot, int ilot)
-    //  private void zapolnitLot(int lot)
-
+    private void zapolnitProgrevLot()
     {
         // заполняет поля
         System.out.println("Ищу поле с ценой");
-        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr["+(2+ilot)+"]/td[7]/span")));
-        // String myrez0 = driver.findElement(By.id("N10:PriceBounds:0")).getText();
+        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[4]/span")));
+
         String strCeni = element.getText();
         String strMinCena = "";
         System.out.println(strCeni);
         int i = 0;
-        for (i = 0; strCeni.charAt(i) != ' '; i++) {
+        for (i = 0; i < strCeni.length(); i++) {
             if (strCeni.charAt(i) != ',') {
                 if (strCeni.charAt(i) != '-') strMinCena += strCeni.charAt(i);
             }
         }
         double mincena = Double.parseDouble(strMinCena);
         System.out.println("Цена = " + strMinCena);
-        mincena = mincena;
-        //int int0 = (int) (dbl0 * (1 - (ponizitNa/100)));
 
-        // System.out.println("Цена поменялась");                 //span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[6]/input
-        // element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[6]/input")));
-        // element.click();
-        // element.sendKeys(Keys.CONTROL + "a");
         char keyCode = '\u0001'; // ctr + a
-        //element.sendKeys  (Keys.CONTROL, "a");
-        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[6]/input")));
+
+        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[5]/input")));
         element.sendKeys(""+ keyCode);
-        // long mycena = (long) (cenalota[ilot] * (1 - (procent[ilot] / 100)));
 
-        //long mycena = (long)(cenalota[ilot] * 0.985);
-        double mycena = new BigDecimal(mincena).setScale(2, RoundingMode.UP).doubleValue();// long mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
-        /*if (pervzapol)
-        {
-            mycena = 11520260;
-            pervzapol = false;
-            System.out.println("Pervizapol");
-        }
+        double mycena = new BigDecimal(mincena).setScale(2, RoundingMode.DOWN).doubleValue();
 
-        else  {*/
-        //System.out.println("Нормал цена");
-        // mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
-        //mycena = (long) (mincena+5);
-
-        // }
-
-        //long mycena = 0;
-        // if (pervzapol) mycena = (long)(cenalota[ilot] * 0.985);
-        //  else mycena = (long) ((cenalota[ilot] * (1 - (procent[ilot] / 100)))/(1-(skidka[ilot]/100)));
-
-            /* Random myRandom = new Random();
-             int n = myRandom.nextInt(40);
-             mycena += n;*/
 
         element.sendKeys("" + mycena);
         element.sendKeys(Keys.TAB);
         System.out.println("Цену подал");
-        element = wait.until(presenceOfElementLocated(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[9]/span")));
-        String kolichStr = element.getText();// количесво 1
-        System.out.println("Количество = " + kolichStr);
-        int kolichestvo = Integer.parseInt(kolichStr);
+
+        long kolichestvo = 0;
+        do {
+            kolichestvo = prochitatKolichestvo(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[7]/span"));
+            System.out.println("Количество = " + kolichestvo);
+        } while (kolichestvo == 0);
+
         int povtor = 0;
         double cenaStr = 0;
         do {
             do {
-                cenaStr = ProchitatCeny(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[" + (1 + lot) + "]/td[10]/span"));//общая цена
+                cenaStr = ProchitatCeny(By.xpath("//span[@id='BidItemPricesTableVO']/table[2]/tbody/tr[2]/td[8]/span"));//общая цена
             } while (cenaStr == 0);
             //"Строка2   "
-            System.out.println("Моя цена для лота" + lot + "  " + mycena);
-            System.out.println("Повтор лота" + lot + "  " + povtor);
-            System.out.println("Количество лота" + lot + "  " + kolichestvo);
+            System.out.println("Моя цена для лота" + mycena);
+            System.out.println("Повтор лота" + povtor);
+            System.out.println("Количество лота" + kolichestvo);
             // System.out.println("Процент понижения   " + procent[ilot]);
             // System.out.println("Коэфицент умножения   " + (1 - (procent[ilot] / 100)));
             povtor++;
@@ -711,11 +750,36 @@ public class demping_bot {
                 while (!gdemelement(By.id("ContinueBtn")));// подождать когда страница догрузиться
                 element = wait.until(presenceOfElementLocated(By.id("ContinueBtn")));
                 element.click();
-                Thread.sleep(700);
+               // Thread.sleep(700);
             }
         }
         if (nomerpodayshego == 0)  recetap(1);
         else if (nomerpodayshego == 1) recetap(2);
+    }
+    private void progrevNagatprodolgit () throws Exception
+    {
+        element = wait.until(presenceOfElementLocated(By.id("ContinueBtn")));
+        element.click();//нажать продолжит
+        System.out.println("Нажал продолжить");
+        //System.out.println("Кнопка продолжить есть или нет    " + isElementPresent(By.cssSelector("#BidAttributesTable > table.x1h > tbody > tr > th.x1r")));
+        boolean uslovieogidaniya;
+        uslovieogidaniya = !gdemelement(By.cssSelector("#BidAttributesTable > table.x1h > tbody > tr > th.x1r"));
+        while ((uslovieogidaniya) ) // ищет создать ценовое
+        {
+            uslovieogidaniya = !gdemelement(By.cssSelector("#BidAttributesTable > table.x1h > tbody > tr > th.x1r"));
+
+            //для тренировки
+
+            //для тренировки
+            System.out.println("Ищу создать ценовое    ");
+            if (gdemelement(By.cssSelector("h1.x5r"))) {
+                System.out.println("Вылезла ошибка на странице");
+                while (!gdemelement(By.id("ContinueBtn")));// подождать когда страница догрузиться
+                element = wait.until(presenceOfElementLocated(By.id("ContinueBtn")));
+                element.click();
+                Thread.sleep(700);
+            }
+        }
     }
     private void SikuliJavaPwd() throws Exception {
         okwindow.setRect(618, 433, 271, 82);
@@ -868,7 +932,40 @@ public class demping_bot {
 
 
     }
+    private long prochitatKolichestvo(By by)
+    {
+        try
+        {
+            String str = driver.findElement(by).getText();
+            long rezult = 0;
+            // System.out.println("Буду преобразовывать строку в чилсо ");
+            rezult = Long.parseLong(str);
+            //System.out.println("Преобразовал строку в чилсо ");
+            return rezult;
+        }
 
+        catch (StaleElementReferenceException e)
+        {
+            return 0;
+        }
+        catch (NumberFormatException e)
+        {
+            return 0;
+        }
+        catch (NoSuchElementException e)
+        {
+            return 0;
+        }
+        catch (ElementNotVisibleException e)
+        {
+            return 0;
+        }
+        catch (UnhandledAlertException e) {
+            return 0;
+        }
+
+
+    }
     private boolean isAlertPresent() {
         try {
             driver.switchTo().alert();
@@ -1027,6 +1124,17 @@ public class demping_bot {
         okwindow.setRect(597, 433, 245, 54);
         okwindow.wait(input2, 10000);
     }
+    private void progrevSikuliPodpisatButton() throws Exception{
+        okwindow.setRect(109, 608, 123, 64); // на тренеровках
+        // убрал okwindow.setRect(129,642,72,23);  // в тендере
+        // убрал okwindow.wait(gotovpodpisat, 10000);
+        // убрал okwindow.setRect(123, 628, 90, 32);
+        //okwindow.setRect(123, 599, 95, 36);
+        okwindow.wait(podpisat, 20000); //добавил
+        okwindow.click(podpisat);
+        okwindow.setRect(597, 433, 245, 54);
+        okwindow.wait(input2, 10000);
+    }
     private void SikuliJavaPwd2() throws Exception{
         boolean NeviguPWD = true;
 
@@ -1066,11 +1174,7 @@ public class demping_bot {
         okwindow.click(ok4);
     }
     private void SikuliJavaOtpravitButton() throws Exception{
-       /* okwindow.setRect(31, 625, 97, 40);
-        okwindow.wait(gotovotpravit, 10000);
-        okwindow.setRect(217, 625, 84, 38);
-        okwindow.click(otpravit);
-        System.out.println("Нажал отправить на сервер заявку");*/
+
         long startgdem = System.currentTimeMillis();
         while (!gdemelement(By.id("FileListRNEx:SignItemDisabled:"+(nomercenovogo))))
         {
@@ -1084,16 +1188,28 @@ public class demping_bot {
                 proverkaNaitiPodpisat();
                 SikuliPodpisatButton();
                 SikuliJavaPwd2();
-               /* okwindow.setRect(31, 625, 97, 40);
-                okwindow.wait(gotovotpravit, 10000);
-                okwindow.setRect(217, 625, 84, 38);
-                okwindow.click(otpravit);*/
+
             }
-        }  // ищет иконку котороя станет не активной если ценовое подписалось
-        // while (gdemNotelement(By.xpath("//a[@id='FileListRNEx:SignItem:" + (nomercenovogo) + "']/img")));
-        //By.xpath("//a[@id='FileListRNEx:SignItem:" + (nomercenovogo) + "']/img")
-        /*okwindow.setRect(31, 625, 97, 40);
-        okwindow.wait(gotovotpravit, 10000);*/
+        }
+    }
+    private void progrevSikuliJavaOtpravitButton() throws Exception {
+
+        long startgdem = System.currentTimeMillis();
+        nomercenovogo++;
+        while (!gdemelement(By.id("FileListRNEx:SignItemDisabled:" + (nomercenovogo)))) {
+            if ((System.currentTimeMillis() - startgdem) > 9000)// время ожидания элемента поле которого перегруз
+            {
+                System.out.println("Подаюсь за ново из за ошибки неотправилось на сервер");
+
+                podpisatCenovoe();
+                SikuliModalWidow();
+                // SikuliJavaPwd();
+                proverkaNaitiPodpisat();
+                progrevSikuliPodpisatButton();
+                SikuliJavaPwd2();
+            }
+        }
+        nomercenovogo--;
     }
     private void gdemCancelBtn() throws Exception{
 

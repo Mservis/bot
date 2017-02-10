@@ -32,7 +32,7 @@ public class yavnoe_ogidanie {
     private WebDriver driver;
     private String baseUrl, nomerZayavki;
     private WebDriverWait wait;
-    private boolean acceptNextAlert = true; private boolean ponastoyashemy, otprvlyat;
+    private boolean acceptNextAlert = true; private boolean ponastoyashemy, otpravlyat;
     private StringBuffer verificationErrors = new StringBuffer();
     private WebElement element;
     private long nachalotesta, nachalovsegotesta;
@@ -54,7 +54,7 @@ public class yavnoe_ogidanie {
         zakupka = 295579;//номер закупки
         dostarta = 67;//440000; //за сколько секунд до окончания нужно подать заявку
         nomerpodayshego = 2; // каким будет этот комп первым или вторым, если первый то он подаеться как настанет время, если второй то когда поменяеться цена в момент того как подаеться первый
-        otprvlyat = true;// для тренеровки если ложь то вконце не отправит
+        otpravlyat = true;// для тренеровки если ложь то вконце не отправит
         procentponigeniya = 0.049;// процент понижения для первого подающего, что бы получить процен - нужно умножить на 100
         procentponigeniyaFor2 = 0.011;// процент понижения для второго подающего, что бы получить процен - нужно умножить на 100
         vsegolotov = 1;
@@ -116,7 +116,7 @@ public class yavnoe_ogidanie {
         SikuliJavaPwd2();//добавить проверку в конце в друг цена поменялась
         SikuliJavaOtpravitButton();//добавить проверку в конце в друг цена поменялась
 
-        if(otprvlyat){
+        if(otpravlyat){
             nagatotpravit();
             gdemotpravilos();
             pokazatskorostPodachi();
